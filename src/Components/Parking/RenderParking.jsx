@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './RenderParking.module.css'
+import teejoe from './Tee-Joe.png';
+import stevens from './stevens.png'
 
 const RenderParking = () => {
   return (
@@ -7,9 +9,9 @@ const RenderParking = () => {
       <div className="container">
         <div className={styles.parking}>
           <h3>Tee-Joe Gonzales Park</h3>
-          <img src="./src/Components/Parking/Tee-Joe.png" alt="" />
+          <img src={teejoe} alt="" />
           <h3>J Leo Stevens Park</h3>
-          <img src="./src/Components/Parking/stevens.png" alt="" />
+          <img src={stevens} alt="" />
         </div>
         <div className={styles.rules}>
           <ul>
