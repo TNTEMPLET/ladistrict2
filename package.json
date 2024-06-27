@@ -1,7 +1,7 @@
 {
-  "homepage": "http://TNTEMPLET.github.io/ladistrict2",
+  "homepage": "https://tntemplet.github.io/ladistrict2/",
   "name": "d2-tournament-app",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
