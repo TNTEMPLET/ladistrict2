@@ -1,0 +1,22 @@
+.navMenu{
+    background-color: hsl(230, 100%, 10%);
+    color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 20px;
+
+}
+
+.link {
+    justify-self: center;
+    color: white;
+    margin-left: 5px;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: hsl(0, 0%, 80%);
+}
