@@ -7,9 +7,9 @@ const RenderParking = () => {
       <div className="container">
         <div className={styles.parking}>
           <h3>Tee-Joe Gonzales Park</h3>
-          <img src="./src/images/Tee-Joe.png" alt="" />
+          <img src="./src/Components/Parking/Tee-Joe.png" alt="" />
           <h3>J Leo Stevens Park</h3>
-          <img src="./src/images/stevens.png" alt="" />
+          <img src="./src/Components/Parking/stevens.png" alt="" />
         </div>
         <div className={styles.rules}>
           <ul>
