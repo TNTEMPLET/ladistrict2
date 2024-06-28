@@ -1,5 +1,5 @@
 import BracketFive from "../BracketTemplates/BracketFive";
-
+import Scoreboard10U from "../Scoreboards/Scoreboard10U";
 function MinorsBracket_10(){
   const info = [{id: 1,
     division: "Minor Baseball (8-10)",
@@ -142,7 +142,9 @@ function MinorsBracket_10(){
               ]
 
     return(<>
-     {bracket.length > 0 && <BracketFive bracket={bracket} info={info}/>}
+      <Scoreboard10U />
+      <hr />
+      {bracket.length > 0 && <BracketFive bracket={bracket} info={info}/>}
     </>)
 
 }

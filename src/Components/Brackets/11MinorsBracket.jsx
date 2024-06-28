@@ -1,4 +1,5 @@
 import BracketThree from "../BracketTemplates/BracketThree";
+import Scoreboard11U from "../Scoreboards/Scoreboard11U";
 
 function MinorsBracket_11(){
     const info = [{
@@ -85,6 +86,9 @@ function MinorsBracket_11(){
         loserFour:loserFour,
     }]
 
-    return(<>{elevenMinors.length > 0 && <BracketThree bracket={elevenMinors} info={info} />}</>)
+    return(<>
+        <Scoreboard11U />
+        <hr />
+        {elevenMinors.length > 0 && <BracketThree bracket={elevenMinors} info={info} />}</>)
 }
 export default MinorsBracket_11

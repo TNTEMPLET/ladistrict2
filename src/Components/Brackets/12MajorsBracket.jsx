@@ -1,4 +1,5 @@
 import BracketFour from "../BracketTemplates/BracketFour";
+import Scoreboard12U from "../Scoreboards/Scoreboard12U";
 
 function MajorBracket_12(){
   const info = [{
@@ -116,7 +117,9 @@ function MajorBracket_12(){
                 }]
 
     return(<>
-     {twelveMajors.length > 0 && <BracketFour bracket={twelveMajors} info={info}/>}
+      <Scoreboard12U />
+      <hr />
+      {twelveMajors.length > 0 && <BracketFour bracket={twelveMajors} info={info}/>}
     </>)
 
 }

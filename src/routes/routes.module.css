@@ -24,3 +24,12 @@ body {
     color: hsl(250, 0%, 100%);
     text-shadow: 2px 2px hsl(0, 0%, 50%);
 }
+
+.scoreboards{
+    width: 100vw;
+}
+
+.containerScoreboard {
+    display: flex;
+    flex-direction: column;
+}
