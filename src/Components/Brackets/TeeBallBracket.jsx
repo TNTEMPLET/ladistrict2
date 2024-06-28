@@ -18,7 +18,7 @@ function Teeball(){
     }
 
     //GAME 1
-    const oneTopScore = 1;
+    const oneTopScore = 0;
     const oneBottomScore = 0;
     const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? elevenMinorsTeams.one : elevenMinorsTeams.two) : "";
     const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? elevenMinorsTeams.one : elevenMinorsTeams.two) : "A";
