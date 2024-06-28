@@ -3,6 +3,7 @@
     background-color: white;
     justify-items: center;
     justify-content: space-between;
+    min-width: 1200px;
 }
 
 .parking {
