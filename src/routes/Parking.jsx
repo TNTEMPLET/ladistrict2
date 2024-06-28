@@ -6,8 +6,8 @@ import RenderParking from '../Components/Parking/RenderParking'
 const Parking = () => {
   return (
     <>
-      <Header />
       <Navbar />
+      <Header />
       <RenderParking />
   </>
   )

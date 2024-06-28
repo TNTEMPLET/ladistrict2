@@ -13,7 +13,7 @@ html, body{
     height: 100%;
 }
 
-img {
+.logo {
     width: auto;
     height: auto;
     margin-left: auto;
@@ -26,20 +26,3 @@ img {
     justify-content: space-between;
 }
 
-.home-container {
-    background-color: hsl(240, 100%, 20%);
-    height: 100%;
-    text-align: center;
-}
-
-.text-info {
-    height: 400px;
-}
-
-.text-info h1 {
-    font-size: 3.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    color: hsl(250, 0%, 100%);
-    text-shadow: 4px 2px hsl(0, 0%, 0%);
-}

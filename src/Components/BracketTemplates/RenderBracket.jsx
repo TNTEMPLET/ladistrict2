@@ -47,46 +47,46 @@ const RenderBracket = () => {
             }, [bracket]);
             
     return (<>
-        <div className="main">
-            <div className="bracket-tabs">
+        <div className={styles.main}>
+            <div className={styles.bracketTabs}>
                 <div>
                     <button 
-                            className={tabState === 'TB' ? styles['tab-selected'] : ""} 
+                            className={tabState === 'TB' ? `${styles.tabSelected}` : ""} 
                             id="TB" 
                             onClick={handleBracketChange}
                         >
                             Tee-Ball
                     </button>
                     <button 
-                            className={tabState === 'CP' ? styles['tab-selected'] : ""} 
+                            className={tabState === 'CP' ? `${styles.tabSelected}` : ""} 
                             id="CP" 
                             onClick={handleBracketChange}
                         >
                             Coaches Pitch
                     </button>
                     <button 
-                            className={tabState === '9U' ? styles['tab-selected'] : ""} 
+                            className={tabState === '9U' ? `${styles.tabSelected}` : ""} 
                             id="9U" 
                             onClick={handleBracketChange}
                         >
                             9U Minors
                     </button>
                     <button 
-                            className={tabState === '10U' ? styles['tab-selected'] : ""} 
+                            className={tabState === '10U' ? `${styles.tabSelected}` : ""} 
                             id="10U" 
                             onClick={handleBracketChange}
                         >
                             10U Minors
                     </button>
                     <button 
-                            className={tabState === '11U' ? styles['tab-selected'] : ""} 
+                            className={tabState === '11U' ? `${styles.tabSelected}` : ""} 
                             id="11U" 
                             onClick={handleBracketChange}
                         >
                             11U Minors
                     </button>
                     <button 
-                            className={tabState === '12U' ? styles['tab-selected'] : ""} 
+                            className={tabState === '12U' ? `${styles.tabSelected}` : ""} 
                             id="12U" 
                             onClick={handleBracketChange}
                         >

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    background-color: hsl(240, 100%, 10%);
+}
+.homeContainer {
+    background-color: hsl(240, 100%, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.textInfo {
+    height: 400px;
+}
+
+.textInfo {
+    font-size: 2.5rem;
+    font-family: Poppins;
+    text-transform: uppercase;
+    color: hsl(250, 0%, 100%);
+    text-shadow: 2px 2px hsl(0, 0%, 50%);
+}

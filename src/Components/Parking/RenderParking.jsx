@@ -6,7 +6,7 @@ import stevens from './stevens.png'
 const RenderParking = () => {
   return (
     <>
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.parking}>
           <h3>Tee-Joe Gonzales Park</h3>
           <img src={teejoe} alt="" />

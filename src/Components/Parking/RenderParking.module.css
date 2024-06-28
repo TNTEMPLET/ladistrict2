@@ -1,3 +1,10 @@
+.container {
+    display: flex;
+    background-color: white;
+    justify-items: center;
+    justify-content: space-between;
+}
+
 .parking {
     display: flex;
     flex-direction: column;

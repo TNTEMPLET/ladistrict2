@@ -1,14 +1,15 @@
+
 button{
     background-color: white;
     padding: 5px 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.tab-selected {
+.tabSelected {
     background-color: hsl(240, 100%, 20%); /* Example background color */
     color: white; /* Example text color */
 }
 
-.bracket-tabs {
+.bracketTabs {
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -17,6 +18,7 @@ button{
 
 .main{
     display: block;
-    margin: 0 15px;
-    width: 1200px;
+    background-color: white;
+    width: 100vw;
+    min-width: 1400px;
 }

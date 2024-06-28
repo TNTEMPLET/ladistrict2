@@ -5,8 +5,11 @@ import lalllogo from './lall_logo.png'
 const Header = () => {
   return (<>
     <div className={styles.container}>
-        <img src={lalllogo} alt="" className="logo" />
-        <h1>2024 District-2 Tournament</h1>
+      <div className={styles.headerItems}>
+        <img src={lalllogo} alt="" className={styles.logo} />
+        <div className={styles.headerH1}>2024 District-2 Tournament</div>
+       
+      </div>
     </div>
   </>
   )
