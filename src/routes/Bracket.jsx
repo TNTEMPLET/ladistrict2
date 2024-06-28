@@ -6,8 +6,8 @@ import Header from '../Components/Header/Header'
 const Bracket = () => {
   return (
   <>
-    <Header />
     <Navbar />
+    <Header />
     <RenderBracket />
   </>
   );

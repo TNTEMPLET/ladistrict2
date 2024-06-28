@@ -2,7 +2,6 @@ button{
     background-color: white;
     padding: 5px 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px 5px 0px 0px;
 }
 .tab-selected {
     background-color: hsl(240, 100%, 20%); /* Example background color */

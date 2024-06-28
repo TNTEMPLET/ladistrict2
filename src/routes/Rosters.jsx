@@ -8,8 +8,6 @@ const Rosters = () => {
 
       <Header />
       <Navbar />
-      <Minor9 />
-
   </>)
 }
 
