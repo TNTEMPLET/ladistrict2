@@ -13,7 +13,7 @@ function Teeball(){
       }]
     const elevenMinorsTeams = {
         one: "GNO - Navy",
-        two: "Eastbacnk",
+        two: "Eastbank",
         three: "GNO - Red",
     }
 
