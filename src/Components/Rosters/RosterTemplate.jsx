@@ -1,9 +1,11 @@
+import styles from './RosterTemplate.module.css'
+
 function RosterTemplate(props){
     const {roster} = props
     const createRoster = roster.map((team, index) =>  <img src={team.roster} /> );
 
 return  (   <>
-                {createRoster}
+                <div className={styles.main}>{createRoster}</div>
             </>);
 }
 
