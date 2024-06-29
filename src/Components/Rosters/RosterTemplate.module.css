@@ -1,8 +1,23 @@
-.roster {
-    width: inherit;
+button{
+    background-color: white;
+    padding: 5px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.tabSelected {
+    background-color: hsl(240, 100%, 20%); /* Example background color */
+    color: white; /* Example text color */
 }
 
-.rosterContainer{
-    width: 100%;
-    margin: 0 auto;
+.bracketTabs {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.main{
+    display: block;
+    background-color: white;
+    width: 100vw;
+    min-width: 1400px;
 }

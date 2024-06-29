@@ -1,13 +1,11 @@
 import React from 'react'
-import Header from '../Components/Header/Header'
 import Navbar from '../Components/Navbar/Navbar'
-import Minor9 from '../Components/Rosters/Minor9'
+import RenderRoster from '../Components/Rosters/RenderRoster'
 
 const Rosters = () => {
   return (<>
-
-      <Header />
       <Navbar />
+      <RenderRoster />
   </>)
 }
 
