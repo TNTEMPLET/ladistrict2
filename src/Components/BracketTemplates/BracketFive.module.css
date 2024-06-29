@@ -14,7 +14,7 @@
 }
 
 .loserBracket .colOne .game{
-    margin-top: -180px;
+    margin-top: -215px;
 }
 .loserBracket .colTwo .bye{
     margin-top: -25px;
@@ -38,7 +38,7 @@
 }
 .colOne .game{
     min-width: 120px;
-    margin-top: 175px;
+    margin-top: 315px;
 }
 .colOne .game .topTeam {
     display: flex;
