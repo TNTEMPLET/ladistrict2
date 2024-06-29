@@ -29,7 +29,17 @@ body {
     width: 100vw;
 }
 
-.containerScoreboard {
+.hostInfo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    padding-bottom: 25px;
+}
+
+.hostInfo img{
+    width: 5%;
+    height: 5%;
+    margin-left: 10px;
 }

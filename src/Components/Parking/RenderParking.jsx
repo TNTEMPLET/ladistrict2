@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './RenderParking.module.css'
 import teejoe from './Tee-Joe.png';
-import stevens from './stevens.png'
+import stevens from './stevenv2.jpeg'
 
 const RenderParking = () => {
   return (
@@ -28,7 +28,10 @@ const RenderParking = () => {
             <li>Yellow highlighted areas are parking zones.</li>
             <li>DO NOT PARK ON SIDE OF ROADS</li>
             <li>RED HIGHLIGHTED AREA ARE NO PARKING ZONES</li><br />
-            <h3>YOUR VEHICLE WILL BE TOWED IF YOU VIOLATE PARKING RULES</h3>
+            <h3>YOUR VEHICLE WILL BE TOWED IF YOU VIOLATE PARKING RULES</h3><br /><br /><br />
+            <h2>Admissions and Concessions</h2>
+            <li>Admission: $5.00</li>
+            <li>Payment Methods: Cash, Card (Concessions Only), or Venmo </li>
           </ul>
         </div>
       </div>
