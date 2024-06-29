@@ -21,8 +21,8 @@ function CoachesPitch(){
     };
 
     //GAME 1
-    const oneTopScore = 0;
-    const oneBottomScore = 0;
+    const oneTopScore = 11;
+    const oneBottomScore = 9;
     const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? coachesPitchTeams.one : coachesPitchTeams.two) : "";
     const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? coachesPitchTeams.one : coachesPitchTeams.two) : "A";
 
