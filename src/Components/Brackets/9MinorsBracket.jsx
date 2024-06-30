@@ -25,8 +25,8 @@ function MinorsBracket_9(){
     const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? elevenMinorsTeams.one : elevenMinorsTeams.two) : "A";
     
     //GAME 2
-    const twoTopScore = 0;
-    const twoBottomScore = 0;
+    const twoTopScore = 18;
+    const twoBottomScore = 3;
     const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? winnOne : elevenMinorsTeams.three) : "";
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? winnOne : elevenMinorsTeams.three) : "B";
     
