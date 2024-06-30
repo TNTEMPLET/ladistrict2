@@ -29,8 +29,8 @@ function MajorBracket_12(){
     const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? twelveMajorsTeams.one : twelveMajorsTeams.two) : "A";
 
     //GAME 2
-    const twoTopScore = 0;
-    const twoBottomScore = 0;
+    const twoTopScore = 19;
+    const twoBottomScore = 2;
     const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? twelveMajorsTeams.three : twelveMajorsTeams.four) : "";
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? twelveMajorsTeams.three : twelveMajorsTeams.four) : "B";
 
