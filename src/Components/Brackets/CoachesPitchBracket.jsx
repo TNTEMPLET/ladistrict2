@@ -91,7 +91,7 @@ function CoachesPitch(){
                     gameFourNext: "Loser to B",
                     gameFourInfo: "6/29/2024 @ 3:30 PM - F3",
                     gameFive: "Game 5",
-                    gameFiveInfo: "6/30/2024 @ 10:00 AM - F3",
+                    gameFiveInfo: "6/30/2024 @ 10:30 AM - F3",
                     gameSix: "Game 6",
                     gameSixInfo: "6/30/2024 @ 2:00 PM - F3",
                     gameSeven: "Game 7",
