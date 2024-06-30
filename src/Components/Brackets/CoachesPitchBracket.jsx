@@ -33,13 +33,13 @@ function CoachesPitch(){
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? coachesPitchTeams.three : coachesPitchTeams.four) : "C";
 
     //GAME 3
-    const threeTopScore = 0;
-    const threeBottomScore = 0;
+    const threeTopScore = 12;
+    const threeBottomScore = 13;
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : coachesPitchTeams.five) : "";
     const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? winnOne : coachesPitchTeams.five) : "D";
 
     //GAME 4
-    const fourTopScore = 0;
+    const fourTopScore = 10;
     const fourBottomScore = 0;
     const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? winnTwo : coachesPitchTeams.six) :"";
     const loserFour =  fourTopScore!== fourBottomScore ? (fourTopScore < fourBottomScore ? winnTwo : coachesPitchTeams.six) :"B";
