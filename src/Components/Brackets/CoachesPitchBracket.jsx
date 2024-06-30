@@ -45,8 +45,8 @@ function CoachesPitch(){
     const loserFour =  fourTopScore!== fourBottomScore ? (fourTopScore < fourBottomScore ? winnTwo : coachesPitchTeams.six) :"B";
 
     //GAME 5
-    const fiveTopScore = 0;
-    const fiveBottomScore = 0;
+    const fiveTopScore = 12;
+    const fiveBottomScore = 1;
     const winnFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? loserOne : loserFour) :"";
 
     //GAME 6
