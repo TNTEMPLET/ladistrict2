@@ -35,14 +35,14 @@ function MajorBracket_12(){
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? twelveMajorsTeams.three : twelveMajorsTeams.four) : "B";
 
     //GAME 3
-    const threeTopScore = 0;
-    const threeBottomScore = 0;
+    const threeTopScore = 11;
+    const threeBottomScore = 4;
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? winnOne : winnTwo) : "";
     const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : winnTwo) : "C";
 
     //GAME 4
-    const fourTopScore = 0;
-    const fourBottomScore = 0;
+    const fourTopScore = 17;
+    const fourBottomScore = 2;
     const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? loserOne : loserTwo) :"";
 
     //GAME 5
