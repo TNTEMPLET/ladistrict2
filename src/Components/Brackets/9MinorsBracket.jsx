@@ -31,8 +31,8 @@ function MinorsBracket_9(){
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? winnOne : elevenMinorsTeams.three) : "B";
     
     //GAME 3
-    const threeTopScore = 0;
-    const threeBottomScore = 0;
+    const threeTopScore = 10;
+    const threeBottomScore = 6;
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? loserOne : loserTwo) : "";
 
     //GAME 4
