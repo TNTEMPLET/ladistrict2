@@ -43,14 +43,14 @@ function MinorsBracket_10(){
     const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? loserOne : loserTwo) :"";
 
     //GAME 5
-    const fiveTopScore = 0;
-    const fiveBottomScore = 0;
+    const fiveTopScore = 3;
+    const fiveBottomScore = 2;
     const winnFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? winnTwo : winnThree) :"";
     const loserFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore < fiveBottomScore ? winnTwo : winnThree) :"D";
 
     //GAME 6
-    const sixTopScore = 0;
-    const sixBottomScore = 0;
+    const sixTopScore = 6;
+    const sixBottomScore = 9;
     const winnSix = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? winnFour : loserThree) : " " ;
     const loserSix = sixTopScore !== sixBottomScore ? (sixTopScore < sixBottomScore ? winnFour : loserThree) : " " ;
 
