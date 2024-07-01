@@ -55,8 +55,8 @@ function CoachesPitch(){
     const winnSix = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? loserTwo : loserThree) : " " ;
 
     //GAME 7
-    const sevenTopScore = 0;
-    const sevenBottomScore = 0;
+    const sevenTopScore = 1;
+    const sevenBottomScore = 16;
     const winnSeven = sevenTopScore !== sevenBottomScore ? (sevenTopScore > sevenBottomScore ? winnThree : winnFour) : " " ;
     const loserSeven = sevenTopScore !== sevenBottomScore ? (sevenTopScore < sevenBottomScore ? winnThree : winnFour) : "E" ;
 
