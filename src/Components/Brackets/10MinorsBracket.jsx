@@ -55,8 +55,8 @@ function MinorsBracket_10(){
     const loserSix = sixTopScore !== sixBottomScore ? (sixTopScore < sixBottomScore ? winnFour : loserThree) : " " ;
 
     //GAME 7
-    const sevenTopScore = 0;
-    const sevenBottomScore = 0;
+    const sevenTopScore = 6;
+    const sevenBottomScore = 3;
     const winnSeven = sevenTopScore !== sevenBottomScore ? (sevenTopScore > sevenBottomScore ? loserFive : winnSix) : " " ;
 
     //GAME 8
