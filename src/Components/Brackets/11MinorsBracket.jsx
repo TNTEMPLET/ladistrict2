@@ -36,8 +36,8 @@ function MinorsBracket_11(){
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? loserOne : loserTwo) : "";
 
     //GAME 4
-    const fourTopScore = 0;
-    const fourBottomScore = 0;
+    const fourTopScore = 4;
+    const fourBottomScore = 6;
     const winnFour = fourTopScore !== fourBottomScore ? (fourTopScore > fourBottomScore ? winnTwo : winnThree) : " " ;
     const loserFour = fourTopScore !== fourBottomScore ? (fourTopScore < fourBottomScore ? winnTwo : null) : "C" ;
 
