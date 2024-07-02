@@ -46,8 +46,8 @@ function MajorBracket_12(){
     const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? loserOne : loserTwo) :"";
 
     //GAME 5
-    const fiveTopScore = 0;
-    const fiveBottomScore = 0;
+    const fiveTopScore = 1;
+    const fiveBottomScore = 2;
     const winnFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? loserThree : winnFour) :"";
 
     //GAME 6
