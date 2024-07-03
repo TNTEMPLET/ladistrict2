@@ -42,8 +42,8 @@ function MinorsBracket_11(){
     const loserFour = fourTopScore !== fourBottomScore ? (fourTopScore < fourBottomScore ? winnTwo : null) : "C" ;
 
     //GAME 5
-    const fiveTopScore = 0;
-    const fiveBottomScore =  loserFour !== null ? 0: " ";
+    const fiveTopScore = 8;
+    const fiveBottomScore =  loserFour !== null ? 9: " ";
     const winnChampion =  winnFour !== winnTwo 
                 ? ( fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? winnFour : loserFour) : "11U Minors") 
                 : winnFour;
