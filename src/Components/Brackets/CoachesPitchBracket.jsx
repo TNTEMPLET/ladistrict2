@@ -62,12 +62,12 @@ function CoachesPitch(){
 
     //GAME 8
     const eightTopScore = 0;
-    const eightBottomScore = 0;
+    const eightBottomScore = 6;
     const winnEight = eightTopScore !== eightBottomScore ? (eightTopScore > eightBottomScore ? winnFive : winnSix) : " " ;
 
     //GAME 9
-    const nineTopScore = 0;
-    const nineBottomScore = 0;
+    const nineTopScore = 2;
+    const nineBottomScore = 12;
     const winnNine = nineTopScore !== nineBottomScore ? (nineTopScore > nineBottomScore ? loserSeven : winnEight) : " " ;
 
     //GAME 10
