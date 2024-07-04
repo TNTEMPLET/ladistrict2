@@ -71,8 +71,8 @@ function CoachesPitch(){
     const winnNine = nineTopScore !== nineBottomScore ? (nineTopScore > nineBottomScore ? loserSeven : winnEight) : " " ;
 
     //GAME 10
-    const tenTopScore = 0;
-    const tenBottomScore = 0;
+    const tenTopScore = 11;
+    const tenBottomScore = 8;
     const winnChampion = tenTopScore !== tenBottomScore ? (tenTopScore > tenBottomScore ? winnSeven : winnNine) : "Coaches Pitch" ;
 
 
