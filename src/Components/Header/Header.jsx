@@ -7,7 +7,7 @@ const Header = () => {
     <div className={styles.container}>
       <div className={styles.headerItems}>
         <img src={lalllogo} alt="" className={styles.logo} />
-        <div className={styles.headerH1}>2024 District-2 Tournament</div>
+        <div className={styles.headerH1}>2024 Junior and Senior League State Tournament</div>
        
       </div>
     </div>
