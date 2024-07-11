@@ -10,15 +10,18 @@
     display: flex;
     flex-direction: column;
     padding: 5px 15px;
+    width: 50%;
 }
 
 .rules {
     border: 1px solid black;
     width: 50%;
     display: flex;
+    flex-direction: column;
     justify-items: center;
     text-align: center;
     margin: 10px 20px;
+    width: 50%;
 }
 
 ul {
