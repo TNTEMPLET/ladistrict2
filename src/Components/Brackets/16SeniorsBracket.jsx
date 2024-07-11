@@ -83,7 +83,7 @@ function SeniorBracket_16(){
                     gameSixNext: "Loser to D (If First Loss)",
                     gameSixInfo: "7/14/2024 @ 10:00 AM",
                     gameSeven: "Game 7",
-                    gameSevenInfo: "7/13/2024 @ 2:00 PM",
+                    gameSevenInfo: "7/14/2024 @ 2:00 PM",
                     gameSevenMoreInf: "(IF NECESSARY)",
                     teamOne: teams.one,
                     teamTwo: teams.two, 
