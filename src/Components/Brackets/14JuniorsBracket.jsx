@@ -26,8 +26,8 @@ function JuniorsBracket_14(){
     const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? teams.one : teams.two) : "A";
  
     //GAME 2
-    const twoTopScore = 0;
-    const twoBottomScore = 0;
+    const twoTopScore = 2;
+    const twoBottomScore = 12;
     const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? teams.three : teams.four) : "";
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? teams.three : teams.four) : "B";
 
