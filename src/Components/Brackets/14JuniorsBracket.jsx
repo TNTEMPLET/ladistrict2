@@ -38,8 +38,8 @@ function JuniorsBracket_14(){
     const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : teams.five) : "C";
 
     //GAME 4
-    const fourTopScore = 0;
-    const fourBottomScore = 0;
+    const fourTopScore = 11;
+    const fourBottomScore = 9;
     const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? loserOne : loserTwo) :"";
 
     //GAME 6
