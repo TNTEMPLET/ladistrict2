@@ -32,8 +32,8 @@ function JuniorsBracket_14(){
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? teams.three : teams.four) : "B";
 
     //GAME 3
-    const threeTopScore = 0;
-    const threeBottomScore = 0;
+    const threeTopScore = 7;
+    const threeBottomScore = 13;
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? winnOne : teams.five) : "";
     const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : teams.five) : "C";
 
