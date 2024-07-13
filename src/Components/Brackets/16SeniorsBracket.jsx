@@ -42,7 +42,7 @@ function SeniorBracket_16(){
 
     //GAME 4
     const fourTopScore = 0;
-    const fourBottomScore = 0;
+    const fourBottomScore = 12;
     const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? loserOne : loserTwo) :"";
 
     //GAME 5
