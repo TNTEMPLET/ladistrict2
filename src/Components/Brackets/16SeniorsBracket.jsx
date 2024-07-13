@@ -24,12 +24,12 @@ function SeniorBracket_16(){
 
     //GAME 1
     const oneTopScore = 0;
-    const oneBottomScore = 0;
+    const oneBottomScore = 35;
     const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? teams.one : teams.two) : "";
     const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? teams.one : teams.two) : "A";
 
     //GAME 2
-    const twoTopScore = 0;
+    const twoTopScore = 3;
     const twoBottomScore = 0;
     const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? teams.three : teams.four) : "";
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? teams.three : teams.four) : "B";
