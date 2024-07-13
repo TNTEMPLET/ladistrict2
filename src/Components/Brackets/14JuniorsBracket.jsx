@@ -49,8 +49,8 @@ function JuniorsBracket_14(){
     const loserFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore < fiveBottomScore ? winnTwo : winnThree) :"D";
 
     //GAME 5
-    const sixTopScore = 0;
-    const sixBottomScore = 0;
+    const sixTopScore = 12;
+    const sixBottomScore = 11;
     const winnSix = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? winnFour : loserThree) : " " ;
 
     //GAME 7
