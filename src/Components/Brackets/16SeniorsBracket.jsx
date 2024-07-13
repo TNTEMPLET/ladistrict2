@@ -34,13 +34,13 @@ function SeniorBracket_16(){
     const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? teams.three : teams.four) : "";
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? teams.three : teams.four) : "B";
 
-    //GAME 3
+    //GAME 4
     const threeTopScore = 0;
     const threeBottomScore = 0;
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? winnOne : winnTwo) : "";
     const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : winnTwo) : "C";
 
-    //GAME 4
+    //GAME 3
     const fourTopScore = 0;
     const fourBottomScore = 12;
     const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? loserOne : loserTwo) :"";
