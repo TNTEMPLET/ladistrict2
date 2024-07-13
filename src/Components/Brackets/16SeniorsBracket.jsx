@@ -36,7 +36,7 @@ function SeniorBracket_16(){
 
     //GAME 3
     const threeTopScore = 0;
-    const threeBottomScore = 0;
+    const threeBottomScore = 12;
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? winnOne : winnTwo) : "";
     const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : winnTwo) : "C";
 
