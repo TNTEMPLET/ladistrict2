@@ -97,7 +97,7 @@ function JuniorsBracket_14(){
                     gameEightNext: "Loser to E",
                     gameEightInfo: "7/14/2024 @ 10:00 AM",
                     gameNine: "Game 9",
-                    gameNineInfo: "7/14/2024 @ 6:00 PM",
+                    gameNineInfo: "7/14/2024 @ 2:00 PM",
                     gameNineMoreInfo: "(IF NECESSARY)",
                     teamOne: teams.one,
                     teamTwo: teams.two, 
