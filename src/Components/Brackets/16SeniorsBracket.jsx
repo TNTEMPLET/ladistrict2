@@ -51,8 +51,8 @@ function SeniorBracket_16(){
     const winnFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? loserThree : winnFour) :"";
 
     //GAME 6
-    const sixTopScore = 0;
-    const sixBottomScore = 0;
+    const sixTopScore = 4;
+    const sixBottomScore = 8;
     const winnSix = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? winnThree : winnFive) : " " ;
     const loserSix = sixTopScore !== sixBottomScore ? (sixTopScore < sixBottomScore ? winnThree : null) : "D" ;
 
