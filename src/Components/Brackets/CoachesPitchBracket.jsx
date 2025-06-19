@@ -1,4 +1,4 @@
-import BracketSix from "../BracketTemplates/BracketSixRevised";
+import BracketSix from "../BracketTemplates/BracketSix";
 
 function CoachesPitch(){
   const info = [{id: 1,
