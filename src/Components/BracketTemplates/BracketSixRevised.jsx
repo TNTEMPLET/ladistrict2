@@ -1,53 +1,53 @@
-import styles from './BracketSix.module.css';
+import React from 'react';
 
-// Reusable Game component to reduce repetition
-const Game = ({ topTeam, topScore, bottomTeam, bottomScore, gameName, gameNext, gameInfo, isBye = false }) => (
-  <div className={isBye ? styles.bye : styles.game}>
-    <div className={styles.topTeam}>
-      <span className={styles.name}>{topTeam}</span>
-      <span className={styles.score}>{topScore}</span>
+// Using CDN-hosted Tailwind CSS for styling (per guidelines)
+const TailwindCDN = () => (
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+);
+
+// Reusable Game component
+const Game = ({ topTeam, topScore, bottomTeam, bottomScore, gameName, gameInfo, isBye = false }) => (
+  <div className={`p-4 bg-white border rounded-lg shadow-sm ${isBye ? 'opacity-75' : ''} mb-4 relative`}>
+    <div className="flex justify-between items-center">
+      <span className="font-bold text-gray-800">{topTeam}</span>
+      <span className="text-gray-600">{topScore}</span>
     </div>
-    <div className={styles.gameInfo}>
-      <span className={styles.name}>{gameName}</span>
-      <span className={styles.name}>{gameNext}</span>
-      <span className={styles.time}>{gameInfo}</span>
+    <div className="text-center text-sm text-gray-500 my-2">
+      <div>{gameName}</div>
+      <div>{gameInfo}</div>
     </div>
-    <div className={styles.bottomTeam}>
-      <span className={styles.name}>{bottomTeam}</span>
-      <span className={styles.score}>{bottomScore}</span>
+    <div className="flex justify-between items-center">
+      <span className="font-bold text-gray-800">{bottomTeam}</span>
+      <span className="text-gray-600">{bottomScore}</span>
     </div>
+    {/* Connector line to next game (simplified) */}
+    <div className="absolute top-1/2 right-0 w-8 h-0.5 bg-gray-400 -mr-8"></div>
   </div>
 );
 
 // Reusable BracketTitle component
 const BracketTitle = ({ division, site, address, phone, director, next, nextAddress }) => (
-  <div className={styles.bracketTitle}>
-    <div className={styles.division}>
-      <span className={styles.label}>Division: </span>
-      <span className={styles.name}>{division}</span>
+  <div className="mb-8 p-4 bg-gray-100 rounded-lg">
+    <h2 className="text-xl font-bold text-gray-800 mb-2">Tournament Info</h2>
+    <div className="grid grid-cols-2 gap-2 text-sm">
+      <div><span className="font-semibold">Division:</span> {division}</div>
+      <div><span className="font-semibold">Site:</span> {site}</div>
+      <div><span className="font-semibold">Address:</span> {address}</div>
+      <div><span className="font-semibold">Phone:</span> {phone}</div>
+      <div><span className="font-semibold">Director:</span> {director}</div>
+      <div><span className="font-semibold">Next Level:</span> {next}</div>
+      <div className="col-span-2"><span className="font-semibold">Next Address:</span> {nextAddress}</div>
     </div>
-    <div className={styles.label}>
-      Site: <span className={styles.name}>{site}</span>
-    </div>
-    <div className={styles.label}>
-      Address: <span className={styles.name}>{address}</span>
-    </div>
-    <div className={styles.label}>
-      Update Phone: <span className={styles.name}>{phone}</span>
-    </div>
-    <div className={styles.label}>
-      Tournament Director: <span className={styles.name}>{director}</span>
-    </div>
-    <div className={styles.label}>
-      Next Level: <span className={styles.name}>{next}</span>
-    </div>
-    <div className={styles.name}>{nextAddress}</div>
   </div>
 );
 
 function BracketSix({ bracket, info: tournamentInfo }) {
-  // Transform bracket data into an array of game objects for easier mapping
+  // Transform bracket data into a 6-team double-elimination structure
   const gamesData = bracket.map((game, index) => [
+    // Winner's Bracket: Round 1
     {
       key: `game1-${index}`,
       topTeam: game.teamOne,
@@ -55,7 +55,6 @@ function BracketSix({ bracket, info: tournamentInfo }) {
       bottomTeam: game.teamTwo,
       bottomScore: game.oneBottomScore,
       gameName: game.gameOne,
-      gameNext: game.gameOneNext,
       gameInfo: game.gameOneInfo,
     },
     {
@@ -65,143 +64,122 @@ function BracketSix({ bracket, info: tournamentInfo }) {
       bottomTeam: game.teamFour,
       bottomScore: game.twoBottomScore,
       gameName: game.gameTwo,
-      gameNext: game.gameTwoNext,
       gameInfo: game.gameTwoInfo,
     },
     {
       key: `game3-${index}`,
       topTeam: game.teamFive,
       topScore: game.threeTopScore,
-      bottomTeam: game.winnOne,
+      bottomTeam: game.teamSix,
       bottomScore: game.threeBottomScore,
       gameName: game.gameThree,
-      gameNext: game.gameThreeNext,
       gameInfo: game.gameThreeInfo,
     },
+    // Winner's Bracket: Round 2
     {
       key: `game4-${index}`,
-      topTeam: game.winnTwo,
+      topTeam: game.winnOne,
       topScore: game.fourTopScore,
-      bottomTeam: game.teamSix,
+      bottomTeam: game.winnTwo,
       bottomScore: game.fourBottomScore,
       gameName: game.gameFour,
-      gameNext: game.gameFourNext,
       gameInfo: game.gameFourInfo,
-      isBye: true,
     },
+    // Loser's Bracket: Round 1
     {
       key: `game5-${index}`,
       topTeam: game.loserOne,
       topScore: game.fiveTopScore,
-      bottomTeam: game.loserFour,
+      bottomTeam: game.loserThree,
       bottomScore: game.fiveBottomScore,
       gameName: game.gameFive,
-      gameNext: game.gameFiveNext,
       gameInfo: game.gameFiveInfo,
     },
     {
       key: `game6-${index}`,
       topTeam: game.loserTwo,
       topScore: game.sixTopScore,
-      bottomTeam: game.loserThree,
+      bottomTeam: game.loserFour,
       bottomScore: game.sixBottomScore,
       gameName: game.gameSix,
-      gameNext: game.gameSixNext,
       gameInfo: game.gameSixInfo,
-      isBye: true,
     },
+    // Loser's Bracket: Round 2
     {
       key: `game7-${index}`,
-      topTeam: game.winnThree,
+      topTeam: game.winnFive,
       topScore: game.sevenTopScore,
-      bottomTeam: game.winnFour,
+      bottomTeam: game.winnSix,
       bottomScore: game.sevenBottomScore,
       gameName: game.gameSeven,
-      gameNext: game.gameSevenNext,
       gameInfo: game.gameSevenInfo,
     },
+    // Championship
     {
       key: `game8-${index}`,
-      topTeam: game.winnFive,
+      topTeam: game.winnFour,
       topScore: game.eightTopScore,
-      bottomTeam: game.winnSix,
+      bottomTeam: game.winnSeven,
       bottomScore: game.eightBottomScore,
       gameName: game.gameEight,
-      gameNext: game.gameEightNext,
       gameInfo: game.gameEightInfo,
-      isBye: true,
-    },
-    {
-      key: `game9-${index}`,
-      topTeam: game.loserSeven,
-      topScore: game.nineTopScore,
-      bottomTeam: game.winnEight,
-      bottomScore: game.nineBottomScore,
-      gameName: game.gameNine,
-      gameNext: game.gameNineNext,
-      gameInfo: game.gameNineInfo,
-      isBye: true,
-    },
-    {
-      key: `game10-${index}`,
-      topTeam: game.winnSeven,
-      topScore: game.tenTopScore,
-      bottomTeam: game.winnNine,
-      bottomScore: game.tenBottomScore,
-      gameName: game.gameTen,
-      gameNext: game.gameTenNext,
-      gameInfo: game.gameTenInfo,
     },
   ]);
 
   return (
-    <div className={styles.bracketInfo}>
-      {/* Render title, assuming tournamentInfo is an array with one object */}
-      {tournamentInfo[0] && <BracketTitle {...tournamentInfo[0]} />}
+    <>
+      <TailwindCDN />
+      <div className="container mx-auto p-4">
+        {/* Render title */}
+        {tournamentInfo[0] && <BracketTitle {...tournamentInfo[0]} />}
 
-      {/* Render brackets */}
-      {gamesData.map((bracketGames, bracketIndex) => (
-        <div className={styles.fullBracket} key={`bracket-${bracketIndex}`}>
-          {/* Winner Bracket */}
-          <div className={styles.winnerBracket}>
-            <div className={styles.colOne}>
-              <Game {...bracketGames[0]} />
-              <Game {...bracketGames[1]} />
+        {/* Render brackets */}
+        {gamesData.map((bracketGames, bracketIndex) => (
+          <div key={`bracket-${bracketIndex}`} className="grid grid-cols-4 gap-8">
+            {/* Winner's Bracket */}
+            <div className="col-span-4">
+              <h3 className="text-lg font-bold text-gray-800 mb-4">Winner's Bracket</h3>
+              <div className="grid grid-cols-3 gap-8">
+                {/* Round 1 */}
+                <div>
+                  <Game {...bracketGames[0]} />
+                  <Game {...bracketGames[1]} />
+                  <Game {...bracketGames[2]} />
+                </div>
+                {/* Round 2 */}
+                <div>
+                  <Game {...bracketGames[3]} />
+                </div>
+                {/* Championship */}
+                <div>
+                  <Game {...bracketGames[7]} />
+                  <div className="p-4 bg-white border rounded-lg shadow-sm mt-4 text-center">
+                    <div className="font-bold text-gray-800">{bracket[bracketIndex].winnChampion}</div>
+                    <div className="text-sm text-gray-500">Champion</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className={styles.colTwo}>
-              <Game {...bracketGames[2]} />
-              <Game {...bracketGames[3]} />
-            </div>
-            <div className={styles.colThree}>
-              <Game {...bracketGames[6]} />
-            </div>
-            <div className={styles.colFour}>
-              <Game {...bracketGames[9]} />
-            </div>
-            <div className={styles.colChamp}>
-              <div className={styles.line}>
-                <div className={styles.team}>{bracket[bracketIndex].winnChampion}</div>
-                <div className={styles.topTeam}>Champion</div>
+
+            {/* Loser's Bracket */}
+            <div className="col-span-4">
+              <h3 className="text-lg font-bold text-gray-800 mb-4">Loser's Bracket</h3>
+              <div className="grid grid-cols-2 gap-8">
+                {/* Round 1 */}
+                <div>
+                  <Game {...bracketGames[4]} />
+                  <Game {...bracketGames[5]} />
+                </div>
+                {/* Round 2 */}
+                <div>
+                  <Game {...bracketGames[6]} />
+                </div>
               </div>
             </div>
           </div>
-
-          {/* Loser Bracket */}
-          <div className={styles.loserBracket}>
-            <div className={styles.colOne}>
-              <Game {...bracketGames[4]} />
-              <Game {...bracketGames[5]} />
-            </div>
-            <div className={styles.colTwo}>
-              <Game {...bracketGames[7]} />
-            </div>
-            <div className={styles.colThree}>
-              <Game {...bracketGames[8]} />
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 }
 
