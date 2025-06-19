@@ -56,7 +56,7 @@ const RenderBracket = () => {
         <div className={styles.main}>
             <div className={styles.bracketTabs}>
                 <div>
-                    {/* <button 
+                    <button 
                             className={tabState === 'TB' ? `${styles.tabSelected}` : ""} 
                             id="TB" 
                             onClick={handleBracketChange}
@@ -97,8 +97,8 @@ const RenderBracket = () => {
                             onClick={handleBracketChange}
                         >
                             12U Majors
-                    </button> */}
-                    <button 
+                    </button>
+                    {/* <button 
                             className={tabState === '14U' ? `${styles.tabSelected}` : ""} 
                             id="14U" 
                             onClick={handleBracketChange}
@@ -111,7 +111,7 @@ const RenderBracket = () => {
                             onClick={handleBracketChange}
                         >
                             16U Seniors
-                    </button>
+                    </button> */}
                 </div>
             </div>
             <div id='bracket'>
