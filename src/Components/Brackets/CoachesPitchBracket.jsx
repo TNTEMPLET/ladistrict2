@@ -1,79 +1,103 @@
-import BracketSix from "../BracketTemplates/BracketSix";
+import BracketEight from "../BracketTemplates/BracketEight";
 
 function CoachesPitch(){
   const info = [{id: 1,
     division: "Coaches Pitch Baseball",
-    site: "J Leo Stevens Park",
-    address: "43230 Cannon Rd, Gonzales LA 70737",
-    phone: "225-270-5420 | 225-223-9470",
-    director: "Conrad Gayle | Wayne Grenfell",
+    site: "Butch Gore Memorial Park",
+    address: "14550 Harry Savoy Rd, St Amant, LA 70774",
+    phone: "225-223-9470",
+    director: "Wayne Grenfell",
     next: "LA Little League State Tournament",
-    nextAddress: "St. Julien Park - Broussard, La | July 19th, 2024",
+    nextAddress: "St. Julien Park - Broussard, La | July 18th, 2025",
   }]
 
-  const coachesPitchTeams = {
-    one: "GNO - Navy",
-    two: "Eastbank - Navy",
-    three: "AP - Navy",
-    four: "Eastbank - Vegas",
-    five: "GNO - Red",
-    six: "AP -  Red",
+  const teams = {
+    one: "AP - Navy",
+    two: "NORD - Navy",
+    three: "Eastbank - Navy",
+    four: "JPRD",
+    five: "AP - Red",
+    six: "NORD -  Red",
+    seven: "Bogalusa",
+    eight: "Eastbank - Vegas",
     };
 
     //GAME 1
-    const oneTopScore = 11;
+    const oneTopScore = 0;
     const oneBottomScore = 9;
-    const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? coachesPitchTeams.one : coachesPitchTeams.two) : "";
-    const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? coachesPitchTeams.one : coachesPitchTeams.two) : "A";
+    const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? teams.one : teams.two) : "";
+    const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? teams.one : teams.two) : "A";
 
     //GAME 2
     const twoTopScore = 8;
     const twoBottomScore = 0;
-    const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? coachesPitchTeams.three : coachesPitchTeams.four) : "";
-    const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? coachesPitchTeams.three : coachesPitchTeams.four) : "C";
+    const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? teams.three : teams.four) : "";
+    const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? teams.three : teams.four) : "B";
 
     //GAME 3
     const threeTopScore = 13;
     const threeBottomScore = 14;
-    const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : coachesPitchTeams.five) : "";
-    const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? winnOne : coachesPitchTeams.five) : "D";
+    const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? teams.five : teams.six) : "";
+    const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? teams.five : teams.six) : "C";
 
     //GAME 4
     const fourTopScore = 10;
     const fourBottomScore = 0;
-    const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? winnTwo : coachesPitchTeams.six) :"";
-    const loserFour =  fourTopScore!== fourBottomScore ? (fourTopScore < fourBottomScore ? winnTwo : coachesPitchTeams.six) :"B";
+    const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? teams.seven : teams.eight) :"";
+    const loserFour =  fourTopScore!== fourBottomScore ? (fourTopScore < fourBottomScore ? teams.seven : teams.eight) :"D";
 
     //GAME 5
     const fiveTopScore = 12;
     const fiveBottomScore = 1;
-    const winnFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? loserOne : loserFour) :"";
+    const winnFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? winnOne : winnTwo) :"";
+    const loserFive =  fiveTopScore!== fiveBottomScore ? (fiveTopScore < fiveBottomScore ? winnOne : winnTwo) :"F";
 
     //GAME 6
     const sixTopScore = 12;
     const sixBottomScore = 2;
-    const winnSix = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? loserTwo : loserThree) : " " ;
+    const winnSix = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? winnThree : winnFour) : " " ;
+    const loserSix =  sixTopScore!== sixBottomScore ? (sixTopScore < sixBottomScore ? winnThree : winnFour) :"E";
 
     //GAME 7
     const sevenTopScore = 1;
     const sevenBottomScore = 16;
-    const winnSeven = sevenTopScore !== sevenBottomScore ? (sevenTopScore > sevenBottomScore ? winnThree : winnFour) : " " ;
-    const loserSeven = sevenTopScore !== sevenBottomScore ? (sevenTopScore < sevenBottomScore ? winnThree : winnFour) : "E" ;
+    const winnSeven = sevenTopScore !== sevenBottomScore ? (sevenTopScore > sevenBottomScore ? loserOne : loserTwo) : " " ;
 
     //GAME 8
     const eightTopScore = 0;
     const eightBottomScore = 6;
-    const winnEight = eightTopScore !== eightBottomScore ? (eightTopScore > eightBottomScore ? winnFive : winnSix) : " " ;
+    const winnEight = eightTopScore !== eightBottomScore ? (eightTopScore > eightBottomScore ? loserThree : loserFour) : " " ;
 
     //GAME 9
     const nineTopScore = 2;
     const nineBottomScore = 12;
-    const winnNine = nineTopScore !== nineBottomScore ? (nineTopScore > nineBottomScore ? loserSeven : winnEight) : " " ;
+    const winnNine = nineTopScore !== nineBottomScore ? (nineTopScore > nineBottomScore ? loserSix : winnSeven) : " " ;
 
     //GAME 10
     const tenTopScore = 11;
     const tenBottomScore = 8;
-    const winnChampion = tenTopScore !== tenBottomScore ? (tenTopScore > tenBottomScore ? winnSeven : winnNine) : "Coaches Pitch" ;
+    const winnTen = tenTopScore !== tenBottomScore ? (tenTopScore > tenBottomScore ? winnEight : loserFive) : " " ;
+    
+    //GAME 11
+    const elevenTopScore = 12;
+    const elevenBottomScore = 2;
+    const winnEleven = elevenTopScore !== elevenBottomScore ? (elevenTopScore > elevenBottomScore ? winnFive : winnSix) : " " ;
+    const loserEleven =  elevenTopScore!== elevenBottomScore ? (elevenTopScore < elevenBottomScore ? winnFive : winnSix) :"E";
+
+    //GAME 12
+    const twelveTopScore = 11;
+    const twelveBottomScore = 8;
+    const winnTwelve = twelveTopScore !== tenBottomScore ? (twelveTopScore > tenBottomScore ? winnNine : winnTen) : " " ;
+
+    //GAME 13
+    const thirteenTopScore = 11;
+    const thirteenBottomScore = 8;
+    const winnThirteen = thirteenTopScore !== thirteenBottomScore ? (thirteenTopScore > thirteenBottomScore ? loserEleven : winnTwelve) : " " ;
+
+    //GAME 14
+    const fourteenTopScore = 11;
+    const fourteenBottomScore = 8;
+    const winnChampion = fourteenTopScore !== fourteenBottomScore ? (fourteenTopScore > fourteenBottomScore ? winnEleven : winnThirteen) : "Coaches Pitch" ;
 
 
     const bracket = [
@@ -82,20 +106,21 @@ function CoachesPitch(){
                     gameOneNext: "Loser to A",
                     gameOneInfo: "6/29/2024 @ 10:30 AM - F3",
                     gameTwo: "Game 2",
-                    gameTwoNext: "Loser to C",
+                    gameTwoNext: "Loser to B",
                     gameTwoInfo: "6/29/2024 @ 12:00 PM - F3",
                     gameThree: "Game 3",
-                    gameThreeNext: "Loser to D",
+                    gameThreeNext: "Loser to C",
                     gameThreeInfo: "6/29/2024 @ 2:00 PM - F3",
                     gameFour: "Game 4",
-                    gameFourNext: "Loser to B",
+                    gameFourNext: "Loser to D",
                     gameFourInfo: "6/29/2024 @ 3:30 PM - F3",
                     gameFive: "Game 5",
+                    gameFiveNext: "Loser to F",
                     gameFiveInfo: "6/30/2024 @ 10:30 AM - F3",
                     gameSix: "Game 6",
+                    gameSixNext: "Loser to E",
                     gameSixInfo: "6/30/2024 @ 2:00 PM - F3",
                     gameSeven: "Game 7",
-                    gameSevenNext: "Loser to E",
                     gameSevenInfo: "6/30/2024 @ 3:30 PM - F3",
                     gameEight: "Game 8",
                     gameEightInfo: "7/2/2024 @ 6:00 PM - F3",
@@ -104,24 +129,34 @@ function CoachesPitch(){
                     gameTen: "Game 10",
                     gameTenInfo: "7/3/2024 @ 6:00 PM - F3",
                     gameEleven: "Game 11",
-                    teamOne: coachesPitchTeams.one,
-                    teamTwo: coachesPitchTeams.two, 
-                    teamThree: coachesPitchTeams.three, 
-                    teamFour: coachesPitchTeams.four,
-                    teamFive: coachesPitchTeams.five,
-                    teamSix: coachesPitchTeams.six,
+                    gameElevenNext: "Loser to G",
+                    gameElevenInfo: "7/1/2025 @ 6:30 PM - F2",
+                    gameTwelve: "Game 12",
+                    gameTwelveInfo: "7/3/2024 @ 6:00 PM - F3",
+                    gameThirteen: "Game 13",
+                    gameThirteenInfo: "7/3/2024 @ 6:00 PM - F3",
+                    gameFourteen: "Game 14",
+                    gameFourteenInfo: "7/3/2024 @ 6:00 PM - F3",
+                    teamOne: teams.one,
+                    teamTwo: teams.two, 
+                    teamThree: teams.three, 
+                    teamFour: teams.four,
+                    teamFive: teams.five,
+                    teamSix: teams.six,
+                    teamSeven: teams.seven,
+                    teamEight: teams.eight,
                     oneTopScore: oneTopScore,
                     oneBottomScore: oneBottomScore,
                     twoTopScore: twoTopScore,
                     twoBottomScore: twoBottomScore,
                     threeTopScore: threeTopScore,
-                    fourTopScore: fourTopScore,
                     threeBottomScore: threeBottomScore,
+                    fourTopScore: fourTopScore,
                     fourBottomScore: fourBottomScore,
-                    sixBottomScore: sixBottomScore,
                     fiveTopScore: fiveTopScore,
                     fiveBottomScore: fiveBottomScore,
                     sixTopScore: sixTopScore,
+                    sixBottomScore: sixBottomScore,
                     sevenTopScore: sevenTopScore,
                     sevenBottomScore:sevenBottomScore,
                     eightTopScore: eightTopScore,
@@ -130,6 +165,14 @@ function CoachesPitch(){
                     nineBottomScore:nineBottomScore,
                     tenTopScore: tenTopScore,
                     tenBottomScore:tenBottomScore,
+                    elevenTopScore: elevenTopScore,
+                    elevenBottomScore:elevenBottomScore,
+                    twelveTopScore: twelveTopScore,
+                    twelveBottomScore:twelveBottomScore,
+                    thirteenTopScore: thirteenTopScore,
+                    thirteenBottomScore:thirteenBottomScore,
+                    fourteenTopScore: fourteenTopScore,
+                    fourteenBottomScore:fourteenBottomScore,
                     winnOne: winnOne,
                     winnTwo: winnTwo,
                     winnThree: winnThree,
@@ -139,17 +182,23 @@ function CoachesPitch(){
                     winnSeven: winnSeven,
                     winnEight: winnEight,
                     winnNine: winnNine,
+                    winnTen: winnTen,
+                    winnEleven: winnEleven,
+                    winnTwelve: winnTwelve,
+                    winnThirteen: winnThirteen,
                     winnChampion: winnChampion,                            
                     loserOne: loserOne,
                     loserTwo: loserTwo,
                     loserThree: loserThree,
                     loserFour: loserFour,
-                    loserSeven: loserSeven,
+                    loserFive: loserFive,
+                    loserSix: loserSix,
+                    loserEleven: loserEleven,
                 }
               ]
 
     return(<>
-     {bracket.length > 0 && <BracketSix bracket={bracket} info={info}/>}
+     {bracket.length > 0 && <BracketEight bracket={bracket} info={info}/>}
     </>)
 
 }

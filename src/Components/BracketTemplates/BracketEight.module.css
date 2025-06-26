@@ -1,0 +1,135 @@
+.bracketInfo {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bracketTitle {
+  background-color: #f2f2f2;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.infoItem {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.fullBracket {
+  margin-bottom: 40px;
+}
+
+.winnerBracket,
+.loserBracket {
+  margin-bottom: 20px;
+}
+
+.bracketHeader {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.bracketGrid {
+  display: flex;
+  gap: 40px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.game {
+  background-color: #f2f2f2;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* LLBWS-inspired shadow */
+  position: relative;
+}
+
+.topTeam,
+.bottomTeam {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.score {
+  font-size: 14px;
+}
+
+.gameInfo {
+  margin: 10px 0;
+  font-size: 12px;
+  color: #555;
+}
+
+.gameInfo span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.connector {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  z-index: 0;
+}
+
+/* Vertical connectors (simplified for LLBWS style) */
+.column:nth-child(1) .game:nth-child(1)::after,
+.column:nth-child(1) .game:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 20px;
+  height: 50px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  z-index: 0;
+}
+
+.champion {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.championName {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.championLabel {
+  font-size: 14px;
+  color: #333;
+}
+
+
