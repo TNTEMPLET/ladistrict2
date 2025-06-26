@@ -112,7 +112,8 @@
 }
 .colTwo .game{
     min-width: 120px;
-    margin-bottom: 120px;
+    margin-bottom: 275px;
+    margin-top: -75px;
 }
 .colTwo .game .topTeam {
     display: flex;
