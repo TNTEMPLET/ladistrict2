@@ -130,7 +130,7 @@ function MajorBracket_12(){
                     winnFive: winnFive,
                     winnSix: winnSix,
                     winnSeven: winnSeven,
-                    winnEight: winnEight,
+                    // winnEight: winnEight,
                     winnChampion: winnChampion,                            
                     loserOne:loserOne,
                     loserTwo:loserTwo,
