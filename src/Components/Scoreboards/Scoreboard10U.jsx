@@ -14,8 +14,8 @@ const Scoreboard10U = () => {
       script.onload = () => {
         if (window.GC && window.GC.scoreboard) {
           window.GC.scoreboard.init({
-            target: "#gc-scoreboard-widget-scwt",
-            widgetId: "2fc9c161-147d-4fea-b61e-1e0fc9deb5de",
+            target: "#gc-scoreboard-widget-89td",
+            widgetId: "6818a21c-0a20-445d-8ea8-d68f94d5e87f",
             maxVerticalGamesVisible: 4,
           });
         }
@@ -27,7 +27,7 @@ const Scoreboard10U = () => {
       };
     }, []);
   
-    return <div id="gc-scoreboard-widget-scwt"></div>;
+    return <div id="gc-scoreboard-widget-89td"></div>;
   };
 
   export default Scoreboard10U;
