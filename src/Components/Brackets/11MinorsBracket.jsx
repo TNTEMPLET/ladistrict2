@@ -9,7 +9,7 @@ function MinorsBracket_11(){
     phone: "225-223-9470",
     director: "Wayne Grenfell",
     next: "LA Little League State Tournament",
-    nextAddress: "St. Julien Park - Broussard, La | July 19th, 2024",
+    nextAddress: "St. Julien Park - Broussard, La | July 18th, 2025",
   }]
 
   const teams = {
