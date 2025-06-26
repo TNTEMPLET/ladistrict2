@@ -25,7 +25,12 @@
 }
 
 .game12 {
-    margin-top:-25px;
+    margin-top:-85px;
+}
+
+.game12 .gameInfo {
+    padding-top: 170px;
+    padding-bottom: 105px;
 }
 
 .bye{
