@@ -280,4 +280,4 @@ function BracketEight(props){
                 </>);
 }
 
-export default BracketSix
+export default BracketEight
