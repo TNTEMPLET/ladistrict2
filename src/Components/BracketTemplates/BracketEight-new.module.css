@@ -16,9 +16,14 @@
     margin-top: 0px;
 }
 
-.loserBracket .colOne .game{
-    margin-top: -215px;
+.loserBracket .colOne .gameOne {
+    margin-top: 0px;
 }
+
+.loserBracket .colOne .gameTwo {
+    margin-top: 0px;
+}
+
 .loserBracket .colTwo .bye{
     margin-top: -25px;
     min-width: 120px;
