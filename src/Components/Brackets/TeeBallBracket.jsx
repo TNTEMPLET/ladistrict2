@@ -1,53 +1,57 @@
-import BracketThree from "../BracketTemplates/BracketThree";
+import BracketFour from "../BracketTemplates/BracketFour";
 
 function Teeball(){
     const info = [{
         id: 1,
         division: "Tee Ball Baseball",
-        site: "J Leo Stevens Park",
-        address: "43230 Cannon Rd, Gonzales LA 70737",
-        phone: "225-270-5420 | 225-223-9470",
-        director: "Conrad Gayle | Wayne Grenfell",
+        site: "Butch Gore Memorial Park",
+        address: "14550 Harry Savoy Rd, St Amant, LA 70774",
+        phone: "225-223-9470",
+        director: "Wayne Grenfell",
         next: "LA Little League State Tournament",
-        nextAddress: "St. Julien Park - Broussard, La | July 19th, 2024",
+        nextAddress: "St. Julien Park - Broussard, La | July 18th, 2025",
       }]
-    const elevenMinorsTeams = {
-        one: "GNO - Navy",
-        two: "Eastbank",
-        three: "GNO - Red",
+    const teams = {
+        one: "AP LL",
+        two: "NORD",
+        three: "Eastbank",
+        four: "JPRD",
     }
 
     //GAME 1
-    const oneTopScore = 6;
-    const oneBottomScore = 27;
-    const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? elevenMinorsTeams.one : elevenMinorsTeams.two) : "";
-    const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? elevenMinorsTeams.one : elevenMinorsTeams.two) : "A";
+    const oneTopScore = 0;
+    const oneBottomScore = 0;
+    const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? teams.one : teams.two) : "";
+    const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? teams.one : teams.two) : "A";
     
     //GAME 2
-    const twoTopScore = 28;
-    const twoBottomScore = 3;
-    const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? winnOne : elevenMinorsTeams.three) : "";
-    const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? winnOne : elevenMinorsTeams.three) : "B";
+    const twoTopScore = 0;
+    const twoBottomScore = 0;
+    const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? teams.three : teams.four) : "";
+    const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? teams.three : teams.four) : "B";
     
     //GAME 3
-    const threeTopScore = 32;
-    const threeBottomScore = 36;
-    const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? loserOne : loserTwo) : "";
+    const threeTopScore = 0;
+    const threeBottomScore = 0;
+    const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? winnOne : winnTwo) : "";
+    const loserThree = threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : winnTwo) : "C" ;
 
     //GAME 4
-    const fourTopScore = 22;
-    const fourBottomScore = 6;
-    const winnFour = fourTopScore !== fourBottomScore ? (fourTopScore > fourBottomScore ? winnTwo : winnThree) : " " ;
-    const loserFour = fourTopScore !== fourBottomScore ? (fourTopScore < fourBottomScore ? winnTwo : null) : "C" ;
-
-    //GAME 5
+    const fourTopScore = 0;
+    const fourBottomScore = 0;
+    const winnFour = fourTopScore !== fourBottomScore ? (fourTopScore > fourBottomScore ? loserOne : loserTwo) : " " ;
+    
+     //GAME 5
     const fiveTopScore = 0;
-    const fiveBottomScore =  loserFour !== null ? 0: " ";
-    const winnChampion =  winnFour !== winnTwo 
-                ? ( fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? winnFour : loserFour) : "Tee Ball") 
-                : winnFour;
+    const fiveBottomScore = 0;
+    const winnFive = fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? loserThree : winnFour) : " " ;
 
-    const elevenMinors =  [{  id: 1,
+    //GAME 6
+    const sixTopScore = 0;
+    const sixBottomScore =  0;
+    const winnChampion = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? winnThree : winnFive) : "Tee Ball");
+
+    const bracket =  [{  id: 1,
         gameOne: "Game 1",
         gameOneNext: "Loser to A",
         gameOneInfo: "6/29/2024 @ 9:00 AM - F3",
@@ -55,16 +59,17 @@ function Teeball(){
         gameTwoNext: "Loser to B",
         gameTwoInfo: "6/30/2024 @ 9:00 AM - F3",
         gameThree: "Game 3",
+        gameThreeNext: "Loser to C"
         gameThreeInfo: "6/30/2024 @ 12:00 PM - F3",
         gameFour: "Game 4",
-        gameFourNext: "Loser to C",
         gameFourInfo: "7/1/2024 @ 6:00 PM - F3",
-        gameFive: "",
-        gameFiveMoreInf: "",
+        gameFive: "Game 5",
         gameFiveInfo: "",
-        teamOne: elevenMinorsTeams.one,
-        teamTwo: elevenMinorsTeams.two, 
-        teamThree: elevenMinorsTeams.three,
+        gameSix: "Game 6",
+        gameSixInfo: "",
+        teamOne: teams.one,
+        teamTwo: teams.two, 
+        teamThree: teams.three,
         oneTopScore: oneTopScore,
         oneBottomScore: oneBottomScore,
         twoTopScore: twoTopScore,
@@ -75,16 +80,19 @@ function Teeball(){
         fourBottomScore: fourBottomScore,
         fiveTopScore: fiveTopScore,
         fiveBottomScore: fiveBottomScore,
+        sixTopScore: sixTopScore,
+        sixBottomScore: sixBottomScore
         winnOne: winnOne,
         winnTwo: winnTwo,
         winnThree: winnThree,
         winnFour: winnFour,
+        winnFive: winnFive,
         winnChampion: winnChampion,                            
         loserOne:loserOne,
         loserTwo:loserTwo,
-        loserFour:loserFour,
+        loserThree:loserThree,
     }]
 
-    return(<>{elevenMinors.length > 0 && <BracketThree bracket={elevenMinors} info={info} />}</>)
+    return(<>{bracket.length > 0 && <BracketFour bracket={bracket} info={info} />}</>)
 }
 export default Teeball
