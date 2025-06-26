@@ -58,7 +58,7 @@ function MinorsBracket_9(){
         gameThree: "Game 3",
         gameThreeInfo: "6/29/2025 @ 10:00 AM - F1",
         gameFour: "Game 4",
-        gameFourNext: "Loser to C",
+        // gameFourNext: "Loser to C",
         gameFourInfo: "6/29/2025 @ 3:00 PM - F1",
         // gameFive: "Game 5",
         // gameFiveMoreInf: "(IF NECESSARY) ",
