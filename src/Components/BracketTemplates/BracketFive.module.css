@@ -1,320 +1,623 @@
-/* BracketFive.module.css */
-
-/* General container */
-.bracketInfo {
-  display: flex;
-  flex-direction: column;
-  border: 0.0625rem solid hsla(0, 0%, 0%, 0.1); /* 1px */
-  border-radius: 0.3125rem; /* 5px */
-  box-shadow: 0.3125rem 0.3125rem hsla(0, 0%, 59%, 0.6); /* 5px */
-  padding-left: 5.625rem; /* 90px */
+.winnerBracket{
+    display: flex;
+    justify-content: left;
 }
 
-/* Bracket title */
-.bracketTitle {
-  width: 25rem; /* 400px */
-  display: flex;
-  flex-direction: column;
-  border: 0.0625rem solid hsla(0, 0%, 0%, 0.3); /* 1px */
-  border-radius: 0.3125rem; /* 5px */
-  align-self: flex-end;
-  margin: 1.25rem 1.25rem 0 0; /* 20px */
-  padding: 0.9375rem; /* 15px */
+.loserBracket{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 200px;
+    margin-top: -150px;
 }
 
-.bracketTitle .name {
-  display: inline;
-  font-weight: lighter;
-  font-size: 0.046875rem; /* 0.75px, scaled relative to parent */
-  text-decoration: underline;
-  text-transform: uppercase;
-  text-align: right;
+.loserBracket .colOne .game{
+    margin-top: -215px;
+}
+.loserBracket .colTwo .bye{
+    margin-top: -25px;
+    min-width: 120px;
+}
+.loserBracket .colThree .bye{
+    margin-top: -240px;
+    min-width: 120px;
 }
 
-.bracketTitle .label,
-.bracketTitle .division {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.0625rem; /* 1px */
+.game{
+    width: 190px;
+    text-align: center;
+    font-size: .90rem;
 }
 
-.bracketTitle .division .name {
-  color: hsl(0, 100%, 50%);
+.bye{
+    width: 190px;
+    text-align: center;
+    font-size: .90rem;
+}
+.colOne .game{
+    min-width: 120px;
+    margin-top: 315px;
+}
+.colOne .game .topTeam {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+.colOne .game .topTeam span {
+    padding-left: 8px;
+}
+.colOne .game .topTeam span:last-child {
+    padding-right: 8px;
+}
+.colOne .game .topTeam .score {
+    margin-left: auto;
+}
+.colOne .game .topTeam:first-child {
+    margin-bottom: -1px;
+}
+.colOne .game .bottomTeam {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    position: relative;
+    margin-bottom: 30px;
+}
+.colOne .game .bottomTeam span {
+    padding-left: 8px;
+}
+.colOne .game .bottomTeam span:last-child {
+    padding-right: 8px;
+}
+.colOne .game .bottomTeam .score {
+    margin-left: auto;
+}
+.colOne .game .bottomTeam:first-child {
+    margin-bottom: -1px;
+}
+.colOne .game .gameInfo {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid black;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.colOne .game .gameInfo span:last-child {
+    padding-right: 8px;
+}
+.colOne .game .gameInfo .time {
+    margin-left: auto;
+}
+.colOne .game .gameInfo:first-child {
+    margin-bottom: -1px;
 }
 
-.label {
-  font-weight: bold;
+.colTwo{
+    margin-bottom: 40px;
 }
-
-/* Base styles for game and bye */
-.game,
-.bye {
-  width: 11.875rem; /* 190px */
-  text-align: center;
-  font-size: 0.5625rem; /* 0.9px, scaled relative to root */
-  min-width: 7.5rem; /* 120px */
-  position: relative;
+.colTwo .game{
+    min-width: 120px;
+    margin-bottom: 120px;
+    margin-top: 60px;
 }
-
-/* Common team styles */
-.topTeam,
-.bottomTeam {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  border-bottom: 0.0625rem solid black; /* 1px */
-  position: relative;
-}
-
-.topTeam span,
-.bottomTeam span {
-  padding-left: 0.5rem; /* 8px */
-}
-
-.topTeam span:last-child,
-.bottomTeam span:last-child {
-  padding-right: 0.5rem; /* 8px */
-}
-
-.topTeam .score,
-.bottomTeam .score {
-  margin-left: auto;
-}
-
-.topTeam:first-child,
-.bottomTeam:first-child {
-  margin-bottom: -0.0625rem; /* -1px */
-}
-
-.bottomTeam {
-  border-right: 0.0625rem solid black; /* 1px */
-  margin-bottom: 1.25rem; /* 20px */
-}
-
-/* Common gameInfo styles */
-.gameInfo {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  border-right: 0.0625rem solid black; /* 1px */
-  position: relative;
-}
-
-/* Winner bracket */
-.winnerBracket {
-  display: flex;
-  justify-content: left;
-}
-
-/* Loser bracket */
-.loserBracket {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  margin-bottom: 12.5rem; /* 200px */
-  margin-top: -9.375rem; /* -150px */
-}
-
-/* Column-specific styles */
-.colOne .game {
-  margin-top: 19.6875rem; /* 315px */
-}
-
-.loserBracket .colOne .game {
-  margin-top: -13.4375rem; /* -215px */
-}
-
-.colTwo {
-  margin-bottom: 2.5rem; /* 40px */
-  margin-left: 0.5rem; /* 8px */
-}
-
-.colTwo .game {
-  margin-bottom: 7.5rem; /* 120px */
-  margin-top: 3.75rem; /* 60px */
-}
-
 .colTwo .game .topTeam {
-  padding-right: 0.5rem; /* 8px */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-right: 8px;
 }
-
+.colTwo .game .topTeam span {
+    padding-left: 8px;
+}
+.colTwo .game .topTeam span:last-child {
+    padding-right: 8px;
+}
+.colTwo .game .topTeam .score {
+    margin-left: auto;
+}
+.colTwo .game .topTeam:first-child {
+    margin-bottom: -1px;
+}
 .colTwo .game .bottomTeam {
-  padding-top: 0.9375rem; /* 15px */
-  padding-right: 0.5rem; /* 8px */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    position: relative;
+    padding-right: 8px;
+    padding-top: 15px;
+    margin-bottom: 20px;    
 }
-
+.colTwo .game .bottomTeam span {
+    padding-left: 8px;
+}
+.colTwo .game .bottomTeam span:last-child {
+    padding-right: 8px;
+}
+.colTwo .game .bottomTeam .score {
+    margin-left: auto;
+}
+.colTwo .game .bottomTeam:first-child {
+    margin-bottom: -1px;
+}
 .colTwo .game .gameInfo {
-  padding-top: 3.4375rem; /* 55px */
-  padding-bottom: 2.1875rem; /* 35px */
-  padding-right: 0.5rem; /* 8px */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid black;
+    position: relative;
+    padding-top: 55px;
+    padding-bottom: 35px;
+    padding-right: 8px;
 }
-
+.colTwo .game .gameInfo span:last-child {
+    padding-right: 8px;
+    margin-top: -1px;
+}
+.colTwo .game .gameInfo .time {
+    margin-left: auto;
+}
+.colTwo .game .gameInfo:first-child {
+    margin-bottom: -1px;
+}
 .colTwo .bye {
-  margin-top: -1.5625rem; /* -25px */
+    min-width: 120px;
+}
+.colTwo .bye .topTeam {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    position: relative;
+
+    padding-right: 8px;
+}
+.colTwo .bye .topTeam span {
+    padding-left: 8px;
+}
+.colTwo .bye .topTeam span:last-child {
+    padding-right: 8px;
+}
+.colTwo .bye .topTeam .score {
+    margin-left: auto;
+}
+.colTwo .bye .topTeam:first-child {
+    margin-bottom: -1px;
+}
+.colTwo .bye .bottomTeam {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    position: relative;
+    padding-top: 15px;
+    padding-right: 8px;
+    margin-bottom: 20px;
+}
+.colTwo .bye .bottomTeam span {
+    padding-left: 8px;
+}
+.colTwo .bye .bottomTeam span:last-child {
+    padding-right: 8px;
+}
+.colTwo .bye .bottomTeam .score {
+    margin-left: auto;
+}
+.colTwo .bye .bottomTeam:first-child {
+    margin-bottom: -1px;
+}
+.colTwo .bye .gameInfo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid black;
+    position: relative;
+    padding-top: 55px;
+    padding-bottom: 35px;
+    padding-left: 8px;
+}
+.colTwo .bye .gameInfo span:last-child {
+    padding-right: 8px;
+    margin-top: -1px;
+}
+.colTwo .bye .gameInfo .time {
+    margin-left: auto;
+}
+.colTwo .bye .gameInfo:first-child {
+    margin-bottom: -1px;
 }
 
-.colThree {
-  margin-top: 4.375rem; /* 70px */
-  margin-left: 0.5rem; /* 8px */
+.colThree{
+    margin-top: 70px;
+    margin-left: 8px;
 }
-
-.colThree .game {
-  margin-bottom: 7.5rem; /* 120px */
-  margin-top: 3.75rem; /* 60px */
+.colThree .game{
+    min-width: 120px;
+    margin-bottom: 120px;
+    margin-top: 60px;
 }
-
+.colThree .game .topTeam {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-right: 8px;
+}
+.colThree .game .topTeam span {
+    padding-left: 8px;
+}
+.colThree .game .topTeam span:last-child {
+    padding-right: 8px;
+}
+.colThree .game .topTeam .score {
+    margin-left: auto;
+}
+.colThree .game .topTeam:first-child {
+    margin-bottom: -1px;
+}
 .colThree .game .bottomTeam {
-  padding-top: 0.9375rem; /* 15px */
-  padding-left: 0.5rem; /* 8px */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 8px;
 }
-
+.colThree .game .bottomTeam span {
+    padding-left: 8px;
+}
+.colThree .game .bottomTeam span:last-child {
+    padding-right: 8px;
+}
+.colThree .game .bottomTeam .score {
+    margin-left: auto;
+}
+.colThree .game .bottomTeam:first-child {
+    margin-bottom: -1px;
+}
 .colThree .game .gameInfo {
-  padding-top: 7.8125rem; /* 125px */
-  padding-bottom: 6.5625rem; /* 105px */
-  padding-left: 0.5rem; /* 8px */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid black;
+    position: relative;
+    padding-top: 125px;
+    padding-bottom: 105px;
+    padding-left: 8px;
+}
+.colThree .game .gameInfo span:last-child {
+    padding-right: 8px;
+    margin-top: -1px;
+}
+.colThree .game .gameInfo .time {
+    margin-left: auto;
+}
+.colThree .game .gameInfo:first-child {
+    margin-bottom: -1px;
+}
+.colThree .bye {
+    min-width: 120px;
+}
+.colThree .bye .topTeam {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-right: 8px;
+}
+.colThree .bye .topTeam span {
+    padding-left: 8px;
+}
+.colThree .bye .topTeam span:last-child {
+    padding-right: 8px;
+}
+.colThree .bye .topTeam .score {
+    margin-left: auto;
+}
+.colThree .bye .topTeam:first-child {
+    margin-bottom: -1px;
+}
+.colThree .bye .bottomTeam {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    position: relative;
+    padding-top: 15px;
+    padding-right: 8px;
+    margin-bottom: 20px;
+}
+.colThree .bye .bottomTeam span {
+    padding-left: 8px;
+}
+.colThree .bye .bottomTeam span:last-child {
+    padding-right: 8px;
+}
+.colThree .bye .bottomTeam .score {
+    margin-left: auto;
+}
+.colThree .bye .bottomTeam:first-child {
+    margin-bottom: -1px;
+}
+.colThree .bye .gameInfo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid black;
+    position: relative;
+    padding-top: 55px;
+    padding-bottom: 35px;
+    padding-left: 8px;
+}
+.colThree .bye .gameInfo span:last-child {
+    padding-right: 8px;
+    margin-top: -1px;
+}
+.colThree .bye .gameInfo .time {
+    margin-left: auto;
+}
+.colThree .bye .gameInfo:first-child {
+    margin-bottom: -1px;
 }
 
-.loserBracket .colThree .bye {
-  margin-top: -15rem; /* -240px */
+.colFour{
+    margin-top: 75px;
+    margin-left: 8px;
 }
-
-.colFour {
-  margin-top: 4.6875rem; /* 75px */
-  margin-left: 0.5rem; /* 8px */
+.colFour .game{
+    min-width: 120px;
 }
-
 .colFour .game .topTeam {
-  margin-top: 12.5rem; /* 200px */
-  padding-right: 0.5rem; /* 8px */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    position: relative;
+    margin-top: 200px;
+    padding-right: 8px;
 }
-
+.colFour .game .topTeam span {
+    padding-left: 8px;
+}
+.colFour .game .topTeam span:last-child {
+    padding-right: 8px;
+}
+.colFour .game .topTeam .score {
+    margin-left: auto;
+}
+.colFour .game .topTeam:first-child {
+    margin-bottom: -1px;
+}
+.colFour .game .bottomTeam {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    position: relative;
+    padding-left: 8px;
+}
+.colFour .game .bottomTeam span {
+    padding-left: 8px;
+}
+.colFour .game .bottomTeam span:last-child {
+    padding-right: 8px;
+}
+.colFour .game .bottomTeam .score {
+    margin-left: auto;
+}
+.colFour .game .bottomTeam:first-child {
+    margin-bottom: -1px;
+}
 .colFour .game .gameInfo {
-  padding-top: 14.0625rem; /* 225px */
-  padding-bottom: 15.9375rem; /* 255px */
-  padding-left: 0.5rem; /* 8px */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid black;
+    position: relative;
+    padding-top: 225px;
+    padding-bottom: 255px;
+    padding-left: 8px;
 }
-
+.colFour .game .gameInfo span:last-child {
+    padding-right: 8px;
+    margin-top: -1px;
+}
 .colFour .game .gameInfo .time {
-  padding-bottom: 3.125rem; /* 50px */
+    margin-left: auto;
+    padding-bottom: 50px;
+}
+.colFour .game .gameInfo:first-child {
+    margin-bottom: -1px;
 }
 
-.colFive {
-  min-width: 7.5rem; /* 120px */
-  margin-top: 32.8125rem; /* 525px */
-  margin-left: 0.5rem; /* 8px */
+.colFive{
+    min-width: 120px;
+    margin-top: 525px;
+    margin-left: 8px;
 }
-
-.colFive .line {
-  margin-top: -1.125rem; /* -18px */
-  margin-bottom: 7.5rem; /* 120px */
-  border-top: 0.0625rem solid black; /* 1px */
-  max-width: 7.5rem; /* 120px */
+.colFive .line{
+    margin-top: -18px;
+    margin-bottom: 120px;
+    border-top: 1px solid black;
+    max-width: 120px;
 }
-
-.colFive .bye .topTeam {
-  min-height: 10.9375rem; /* 175% of typical height, approximated */
-  border-bottom: 0.0625rem dashed black; /* 1px */
-}
-
 .colFive .bye .bottomTeam {
-  align-items: flex-end;
-  padding-top: 0.3125rem; /* 5px */
-  border-bottom: 0.0625rem dashed black; /* 1px */
-  border-right: 0.0625rem dashed black; /* 1px */
+    display: flex;
+    align-items: flex-end;
+    min-width: 120px;
+    position:relative;
+    padding-top: 5px;
+    border-bottom: 1px dashed black;
+    border-right: 1px dashed black;
+}
+.colFive .bye .bottomTeam span {
+    margin-top: -1px;
+    padding-left: 8px;
+}
+.colFive .bye .bottomTeam span:last-child {
+    padding-right: 8px;
+}
+.colFive .bye .bottomTeam .score {
+    margin-left: auto;
+}
+.colFive .bye .bottomTeam:first-child {
+    margin-bottom: -1px;
+}
+.colFive .bye .topTeam {
+    display: flex;
+    align-items: flex-end;
+    min-width: 120px;
+    min-height: 175%;
+    position:relative;
+    border-bottom: 1px dashed black;
+}
+.colFive .bye .topTeam span {
+    margin-top: -1px;
+    padding-left: 8px;
+}
+.colFive .bye .topTeam span:last-child {
+    padding-right: 8px;
+}
+.colFive .bye .topTeam .score {
+    margin-left: auto;
+}
+.colFive .bye .topTeam:first-child {
+    margin-bottom: -1px;
+}
+.colFive .bye .gameInfo{
+    display: grid;
+    min-width: 120px;
+    padding: 200px 30px;
+    border-right: 1px dashed black;
+    border-top: 1px solid black;
+    font-size: .85em;
+}
+.colFive .bye .gameInfo .time{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.colFive .bye .gameInfo .more{
+    padding-bottom: 65px;
 }
 
-.colFive .bye .gameInfo {
-  padding: 12.5rem 1.875rem; /* 200px 30px */
-  border-right: 0.0625rem dashed black; /* 1px */
-  border-top: 0.0625rem solid black; /* 1px */
-  font-size: 0.53125rem; /* 0.85px, scaled */
+.colChamp{
+    min-width: 10px;
+    margin-bottom: 260px
 }
-
-.colFive .bye .gameInfo .time {
-  margin-top: 0.625rem; /* 10px */
-  padding-bottom: 0.625rem; /* 10px */
+.colChamp .line{
+    align-items: center;
+    justify-items: center;
+    margin-top: 725px;
+    min-width: 160px;
 }
-
-.colFive .bye .gameInfo .more {
-  padding-bottom: 4.0625rem; /* 65px */
+.colChamp .line .team{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px;
 }
-
-.colChamp {
-  min-width: 0.625rem; /* 10px */
-  margin-bottom: 16.25rem; /* 260px */
-  margin-left: 0.5rem; /* 8px */
-}
-
-.colChamp .line {
-  margin-top: 45.3125rem; /* 725px */
-  min-width: 10rem; /* 160px */
-}
-
-.colChamp .line .team {
-  display: flex;
-  justify-content: center;
-  font-size: 0.9375rem; /* 1.5px, scaled */
-  font-weight: bold;
-  padding: 0.3125rem; /* 5px */
-}
-
 .colChamp .line .topTeam {
-  border-top: 0.0625rem solid black; /* 1px */
-  padding-top: 0.625rem; /* 10px */
-  justify-content: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    position: relative;
 }
 
-/* Connector lines */
-.game::before,
-.game::after,
-.bye::before,
-.bye::after {
-  content: '';
-  position: absolute;
-  border: 0.0625rem solid black; /* 1px */
+.bracketDisplay{
+    display: flex;
+    flex-direction: column;
 }
-
-.game::before,
-.bye::before {
-  left: 100%;
-  top: 50%;
-  width: 1.25rem; /* 20px */
-  height: 0;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+.bracketInfo{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid hsla(0, 0%, 0%, 0.1);
+    border-radius: 5px;
+    box-shadow: 5px 5px hsla(0, 0%, 59%, 0.6);
+    padding-left: 90px;
 }
-
-.game::after,
-.bye::after {
-  left: 100%;
-  top: 50%;
-  width: 0;
-  height: 3.125rem; /* 50px */
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
+.bracketTitle{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid hsla(0, 0%, 0%, 0.3);
+    border-radius: 5px;
+    align-self: end;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 15px;
 }
-
-.colOne .game:nth-child(1)::before { top: 25%; }
-.colOne .game:nth-child(1)::after { top: 25%; height: 4.6875rem; border-right: 0.0625rem solid black; } /* 75px */
-.colOne .game:nth-child(2)::before { top: 75%; }
-.colOne .game:nth-child(2)::after { top: 75%; height: 4.6875rem; border-right: 0.0625rem solid black; } /* 75px */
-
-.colTwo .game::before { top: 50%; }
-.colTwo .game::after { top: 50%; height: 6.25rem; border-right: 0.0625rem solid black; } /* 100px */
-.colTwo .bye::before { top: 50%; }
-.colTwo .bye::after { top: 50%; height: 6.25rem; border-right: 0.0625rem solid black; } /* 100px */
-
-.colThree .game::before { top: 50%; }
-.colThree .game::after { top: 50%; height: 6.25rem; border-right: 0.0625rem solid black; } /* 100px */
-.colThree .bye::before { top: 50%; }
-.colThree .bye::after { top: 50%; height: 6.25rem; border-right: 0.0625rem solid black; } /* 100px */
-
-.colFour .game::before { top: 50%; }
-.colFour .game::after { top: 50%; height: 6.25rem; border-right: 0.0625rem solid black; } /* 100px */
-
-.colFive .bye::before { top: 25%; }
-.colFive .bye::after { top: 25%; height: 6.25rem; border-right: 0.0625rem solid black; } /* 100px */
+.bracketTitle .name{
+    display: inline;
+    font-weight: lighter;
+    font-size: .75rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: right;
+}
+.bracketTitle .label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+}
+.bracketTitle .division{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bracketTitle .division{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bracketTitle .division .name{
+    color: hsl(0, 100%, 50%);
+}
+.label{
+    font-weight: bold;
+}
