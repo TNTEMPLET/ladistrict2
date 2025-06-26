@@ -118,6 +118,12 @@ function BracketEight(props){
                                                         </div>
                                                         <div className={styles.colFour}>
                                                             <div className={styles.game}>
+                                                                <div className={styles.topTeam}></div>
+                                                                <div className={styles.bottomTeam}></div>           
+                                                            </div>
+                                                        </div>
+                                                        <div className={styles.colFive}>
+                                                            <div className={styles.game}>
                                                                 <div className={styles.topTeam}>
                                                                     <span className={styles.name}>{games.winnEleven}</span>
                                                                     <span className={styles.score}>{games.fourteenTopScore}</span>
