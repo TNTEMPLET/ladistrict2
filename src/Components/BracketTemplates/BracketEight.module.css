@@ -54,6 +54,7 @@
   text-align: center;
   font-size: 0.9rem;
   min-width: 120px;
+  position: relative;
 }
 
 /* Common team styles */
@@ -112,14 +113,14 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  margin-bottom: 200px;
-  margin-top: -150px;
+  margin-bottom: 100px;
+  margin-top: -50px;
 }
 
 /* Column-specific styles for winner bracket */
 .colOne .game {
-  margin-top: 315px;
-  margin-bottom: 120px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .colOne .game .bottomTeam {
@@ -136,8 +137,8 @@
 }
 
 .colTwo .game {
-  margin-bottom: 240px;
-  margin-top: 180px;
+  margin-bottom: 100px;
+  margin-top: 75px;
 }
 
 .colTwo .game .bottomTeam {
@@ -153,11 +154,11 @@
 
 .colThree {
   margin-left: 8px;
-  margin-top: 360px;
+  margin-top: 150px;
 }
 
 .colThree .game {
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 
 .colThree .game .bottomTeam {
@@ -173,11 +174,11 @@
 
 .colFour {
   margin-left: 8px;
-  margin-top: 480px;
+  margin-top: 200px;
 }
 
 .colFour .game .topTeam {
-  margin-top: 200px;
+  margin-top: 100px;
   padding-right: 8px;
 }
 
@@ -194,11 +195,11 @@
 .colChamp {
   min-width: 10px;
   margin-left: 8px;
-  margin-bottom: 260px;
+  margin-bottom: 100px;
 }
 
 .colChamp .line {
-  margin-top: 725px;
+  margin-top: 300px;
   min-width: 160px;
 }
 
@@ -218,8 +219,8 @@
 
 /* Column-specific styles for loser bracket */
 .loserBracket .colOne .game {
-  margin-top: -215px;
-  margin-bottom: 120px;
+  margin-top: -50px;
+  margin-bottom: 50px;
 }
 
 .loserBracket .colOne .game .bottomTeam {
@@ -231,8 +232,8 @@
 }
 
 .loserBracket .colTwo .bye {
-  margin-top: -25px;
-  margin-bottom: 240px;
+  margin-top: 0;
+  margin-bottom: 100px;
 }
 
 .loserBracket .colTwo .bye .bottomTeam {
@@ -248,11 +249,11 @@
 
 .loserBracket .colThree {
   margin-left: 8px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .loserBracket .colThree .game {
-  margin-top: -240px;
+  margin-top: -100px;
 }
 
 .loserBracket .colThree .game .bottomTeam {
@@ -268,11 +269,11 @@
 
 .loserBracket .colFour {
   margin-left: 8px;
-  margin-top: 360px;
+  margin-top: 150px;
 }
 
 .loserBracket .colFour .bye {
-  margin-top: -240px;
+  margin-top: -100px;
 }
 
 .loserBracket .colFour .bye .bottomTeam {
@@ -285,6 +286,56 @@
   padding-bottom: 35px;
   padding-right: 8px;
 }
+
+/* Connector lines */
+.game::before,
+.game::after,
+.bye::before,
+.bye::after {
+  content: '';
+  position: absolute;
+  border: 1px solid black;
+}
+
+.game::before,
+.bye::before {
+  left: 100%;
+  top: 50%;
+  width: 20px;
+  height: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.game::after,
+.bye::after {
+  left: 100%;
+  top: 50%;
+  width: 0;
+  height: 50px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.colOne .game:nth-child(1)::before { top: 25%; }
+.colOne .game:nth-child(1)::after { top: 25%; height: 75px; border-right: 1px solid black; }
+.colOne .game:nth-child(2)::before { top: 75%; }
+.colOne .game:nth-child(2)::after { top: 75%; height: 75px; border-right: 1px solid black; }
+
+.colTwo .game::before { top: 50%; }
+.colTwo .game::after { top: 50%; height: 100px; border-right: 1px solid black; }
+.colTwo .bye::before { top: 50%; }
+.colTwo .bye::after { top: 50%; height: 100px; border-right: 1px solid black; }
+
+.colThree .game::before { top: 50%; }
+.colThree .game::after { top: 50%; height: 100px; border-right: 1px solid black; }
+.colThree .bye::before { top: 50%; }
+.colThree .bye::after { top: 50%; height: 100px; border-right: 1px solid black; }
+
+.colFour .game::before { top: 50%; }
+.colFour .game::after { top: 50%; height: 100px; border-right: 1px solid black; }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
