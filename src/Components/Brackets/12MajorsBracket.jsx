@@ -12,7 +12,7 @@ function MajorBracket_12(){
     nextAddress: "St. Julien Park - Broussard, La | July 19th, 2024",
   }]
 
-  const tenMinorsTeams = {
+  const teams = {
     one: "Bogalusa LL",
     two: "Eastbank LL",
     three: "JPRD LL",
@@ -23,20 +23,20 @@ function MajorBracket_12(){
     //GAME 1
     const oneTopScore = 0;
     const oneBottomScore = 0;
-    const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? tenMinorsTeams.one : tenMinorsTeams.two) : "";
-    const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? tenMinorsTeams.one : tenMinorsTeams.two) : "A";
+    const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? teams.one : teams.two) : "";
+    const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? teams.one : teams.two) : "A";
  
     //GAME 2
     const twoTopScore = 0;
     const twoBottomScore = 0;
-    const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? tenMinorsTeams.three : tenMinorsTeams.four) : "";
-    const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? tenMinorsTeams.three : tenMinorsTeams.four) : "B";
+    const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? teams.three : teams.four) : "";
+    const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? teams.three : teams.four) : "B";
 
     //GAME 3
     const threeTopScore = 0;
     const threeBottomScore = 0;
-    const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? winnOne : tenMinorsTeams.five) : "";
-    const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : tenMinorsTeams.five) : "C";
+    const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? winnOne : teams.five) : "";
+    const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : teams.five) : "C";
 
     //GAME 4
     const fourTopScore = 0;
@@ -70,7 +70,7 @@ function MajorBracket_12(){
     const nineTopScore = loserEight !== null ? 0: " ";
     const nineBottomScore =  loserEight !== null ? 0: " ";
     const winnChampion =  winnFive !== winnEight
-                ? ( nineTopScore !== nineBottomScore ? (nineTopScore > nineBottomScore ? winnEight : loserEight) : "12U Minors") 
+                ? ( nineTopScore !== nineBottomScore ? (nineTopScore > nineBottomScore ? winnEight : loserEight) : "12U Majors") 
                 : winnFive;
 
 
