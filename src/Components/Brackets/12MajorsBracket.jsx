@@ -63,15 +63,15 @@ function MajorBracket_12(){
     //GAME 8
     const eightTopScore = 0;
     const eightBottomScore = 0;
-    const winnEight = eightTopScore !== eightBottomScore ? (eightTopScore > eightBottomScore ? winnFive : winnSeven) : " " ;
+    const winnEight = eightTopScore !== eightBottomScore ? (eightTopScore > eightBottomScore ? winnFive : winnSeven) : "12U Majors" ;
     const loserEight = eightTopScore !== eightBottomScore ? (eightTopScore < eightBottomScore ? winnFive : null) : "E" ;
 
     //GAME 9
-    const nineTopScore = loserEight !== null ? 0: " ";
-    const nineBottomScore =  loserEight !== null ? 0: " ";
-    const winnChampion =  winnFive !== winnEight
-                ? ( nineTopScore !== nineBottomScore ? (nineTopScore > nineBottomScore ? winnEight : loserEight) : "10U Minors") 
-                : winnFive;
+    // const nineTopScore = loserEight !== null ? 0: " ";
+    // const nineBottomScore =  loserEight !== null ? 0: " ";
+    // const winnChampion =  winnFive !== winnEight
+    //             ? ( nineTopScore !== nineBottomScore ? (nineTopScore > nineBottomScore ? winnEight : loserEight) : "10U Minors") 
+    //             : winnFive;
 
 
     const bracket = [
@@ -97,9 +97,9 @@ function MajorBracket_12(){
                     gameEight: "Game 8",
                     gameEightNext: "Loser to E",
                     gameEightInfo: "7/2/2024 @ 5:00 PM - F4",
-                    gameNine: "Game 9",
-                    gameNineInfo: "7/2/2024 @ 8:00 PM - TJP",
-                    gameNineMoreInfo: "(IF NECESSARY)",
+                    // gameNine: "Game 9",
+                    // gameNineInfo: "7/2/2024 @ 8:00 PM - TJP",
+                    // gameNineMoreInfo: "(IF NECESSARY)",
                     teamOne: tenMinorsTeams.one,
                     teamTwo: tenMinorsTeams.two, 
                     teamThree: tenMinorsTeams.three, 
@@ -121,8 +121,8 @@ function MajorBracket_12(){
                     sevenBottomScore:sevenBottomScore,
                     eightTopScore: eightTopScore,
                     eightBottomScore:eightBottomScore,
-                    nineTopScore: nineTopScore,
-                    nineBottomScore:nineBottomScore,
+                    // nineTopScore: nineTopScore,
+                    // nineBottomScore:nineBottomScore,
                     winnOne: winnOne,
                     winnTwo: winnTwo,
                     winnThree: winnThree,
@@ -136,7 +136,7 @@ function MajorBracket_12(){
                     loserTwo:loserTwo,
                     loserThree:loserThree,
                     loserFive:loserFive,
-                    loserEight: loserEight,
+                    // loserEight: loserEight,
                     
                 }
               ]
