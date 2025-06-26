@@ -49,9 +49,16 @@
 .loserBracket .colFour .bye .topTeam .score {
     margin-left: auto;
 }
-/* .loserBracket .colFour .bye .topTeam:first-child {
-    margin-bottom: -1px;
-} */
+.loserBracket .colFour .bye .topTeam:first-child {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-left: 8px;
+}
+
 .loserBracket .colFour .bye .bottomTeam {
     display: flex;
     align-items: center;
