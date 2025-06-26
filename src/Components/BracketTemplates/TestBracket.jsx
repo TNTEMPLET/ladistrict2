@@ -1,8 +1,7 @@
 import React from 'react';
 import { DoubleEliminationBracket, Match, SVGViewer } from '@g-loot/react-tournament-brackets';
 
-// Upper Bracket Matches (Winners' Bracket + Grand Final)
-const upper = [
+const matches = [
   // Winners' Bracket - Round 1
   {
     id: "W1",
@@ -65,25 +64,7 @@ const upper = [
       { id: "team3", name: "Dodgers", resultText: "5", isWinner: false },
     ],
   },
-  // Grand Final
-  {
-    id: "GF",
-    name: "Grand Final",
-    nextMatchId: null,
-    tournamentRound: "4",
-    state: "SCORE_DONE",
-    date: "2025-07-04",
-    time: "3:00 PM",
-    field: "Field A",
-    participants: [
-      { id: "team1", name: "Yankees", resultText: "8", isWinner: true },
-      { id: "team2", name: "Red Sox", resultText: "6", isWinner: false },
-    ],
-  },
-];
-
-// Lower Bracket Matches (Losers' Bracket)
-const lower = [
+  // Losers' Bracket
   {
     id: "L1",
     name: "Losers Round 1",
@@ -126,6 +107,21 @@ const lower = [
       { id: "team3", name: "Dodgers", resultText: "4", isWinner: false },
     ],
   },
+  // Grand Final
+  {
+    id: "GF",
+    name: "Grand Final",
+    nextMatchId: null,
+    tournamentRound: "4",
+    state: "SCORE_DONE",
+    date: "2025-07-04",
+    time: "3:00 PM",
+    field: "Field A",
+    participants: [
+      { id: "team1", name: "Yankees", resultText: "8", isWinner: true },
+      { id: "team2", name: "Red Sox", resultText: "6", isWinner: false },
+    ],
+  },
 ];
 
 // Custom Match Component to display Date, Time, and Field
@@ -145,12 +141,9 @@ const CustomMatchComponent = ({ match, ...props }) => {
 function TestBracket() {
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">
-        Baseball Double Elimination Tournament Bracket
-      </h1>
+      <h1 className="text-2xl font-bold mb-4">Baseball Double Elimination Tournament Bracket</h1>
       <DoubleEliminationBracket
-        upper={upper}
-        lower={lower}
+        matches={matches}
         matchComponent={CustomMatchComponent}
         svgWrapper={({ children, ...props }) => (
           <SVGViewer width={1200} height={600} {...props}>
