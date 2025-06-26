@@ -20,13 +20,13 @@
     margin-top: 0px;
 }
 
-.loserBracket .colTwo .bye{
+.loserBracket .colTwo .byeOne{
     margin-top: -25px;
     min-width: 120px;
 }
-.loserBracket .colThree .bye,
-.loserBracket .colThree .game {
-    margin-top: -240px;
+
+.loserBracket .colTwo .byeTwo{
+    margin-top: -25px;
     min-width: 120px;
 }
 
