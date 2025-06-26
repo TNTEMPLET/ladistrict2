@@ -20,10 +20,10 @@
     margin-top: 0px;
 }
 
-.loserBracket .colTwo .byeOne{
+/* .loserBracket .colTwo .bye{
     margin-top: -25px;
     min-width: 120px;
-}
+} */
 
 .loserBracket .colTwo .byeTwo{
     margin-top: -25px;
@@ -34,6 +34,11 @@
     width: 190px;
     text-align: center;
     font-size: .90rem;
+}
+
+.game9 {
+    margin-top: -25px;
+    min-width: 120px;
 }
 
 .bye{
