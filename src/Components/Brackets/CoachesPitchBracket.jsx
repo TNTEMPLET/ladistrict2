@@ -24,79 +24,79 @@ function CoachesPitch(){
 
     //GAME 1
     const oneTopScore = 0;
-    const oneBottomScore = 9;
+    const oneBottomScore = 0;
     const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? teams.one : teams.two) : "";
     const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? teams.one : teams.two) : "A";
 
     //GAME 2
-    const twoTopScore = 8;
+    const twoTopScore = 0;
     const twoBottomScore = 0;
     const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? teams.three : teams.four) : "";
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? teams.three : teams.four) : "B";
 
     //GAME 3
-    const threeTopScore = 13;
-    const threeBottomScore = 14;
+    const threeTopScore = 0;
+    const threeBottomScore = 0;
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? teams.five : teams.six) : "";
     const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? teams.five : teams.six) : "C";
 
     //GAME 4
-    const fourTopScore = 10;
+    const fourTopScore = 0;
     const fourBottomScore = 0;
     const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? teams.seven : teams.eight) :"";
     const loserFour =  fourTopScore!== fourBottomScore ? (fourTopScore < fourBottomScore ? teams.seven : teams.eight) :"D";
 
     //GAME 5
-    const fiveTopScore = 12;
-    const fiveBottomScore = 1;
+    const fiveTopScore = 0;
+    const fiveBottomScore = 0;
     const winnFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? winnOne : winnTwo) :"";
     const loserFive =  fiveTopScore!== fiveBottomScore ? (fiveTopScore < fiveBottomScore ? winnOne : winnTwo) :"F";
 
     //GAME 6
-    const sixTopScore = 12;
-    const sixBottomScore = 2;
+    const sixTopScore = 0;
+    const sixBottomScore = 0;
     const winnSix = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? winnThree : winnFour) : " " ;
     const loserSix =  sixTopScore!== sixBottomScore ? (sixTopScore < sixBottomScore ? winnThree : winnFour) :"E";
 
     //GAME 7
-    const sevenTopScore = 1;
-    const sevenBottomScore = 16;
+    const sevenTopScore = 0;
+    const sevenBottomScore = 0;
     const winnSeven = sevenTopScore !== sevenBottomScore ? (sevenTopScore > sevenBottomScore ? loserOne : loserTwo) : " " ;
 
     //GAME 8
     const eightTopScore = 0;
-    const eightBottomScore = 6;
+    const eightBottomScore = 0;
     const winnEight = eightTopScore !== eightBottomScore ? (eightTopScore > eightBottomScore ? loserThree : loserFour) : " " ;
 
     //GAME 9
-    const nineTopScore = 2;
-    const nineBottomScore = 12;
+    const nineTopScore = 0;
+    const nineBottomScore = 0;
     const winnNine = nineTopScore !== nineBottomScore ? (nineTopScore > nineBottomScore ? loserSix : winnSeven) : " " ;
 
     //GAME 10
-    const tenTopScore = 11;
-    const tenBottomScore = 8;
+    const tenTopScore = 0;
+    const tenBottomScore = 0;
     const winnTen = tenTopScore !== tenBottomScore ? (tenTopScore > tenBottomScore ? winnEight : loserFive) : " " ;
     
     //GAME 11
-    const elevenTopScore = 12;
-    const elevenBottomScore = 2;
+    const elevenTopScore = 0;
+    const elevenBottomScore = 0;
     const winnEleven = elevenTopScore !== elevenBottomScore ? (elevenTopScore > elevenBottomScore ? winnFive : winnSix) : " " ;
     const loserEleven =  elevenTopScore!== elevenBottomScore ? (elevenTopScore < elevenBottomScore ? winnFive : winnSix) :"E";
 
     //GAME 12
-    const twelveTopScore = 11;
-    const twelveBottomScore = 8;
+    const twelveTopScore = 0;
+    const twelveBottomScore = 0;
     const winnTwelve = twelveTopScore !== tenBottomScore ? (twelveTopScore > tenBottomScore ? winnNine : winnTen) : " " ;
 
     //GAME 13
-    const thirteenTopScore = 11;
-    const thirteenBottomScore = 8;
+    const thirteenTopScore = 0;
+    const thirteenBottomScore = 0;
     const winnThirteen = thirteenTopScore !== thirteenBottomScore ? (thirteenTopScore > thirteenBottomScore ? loserEleven : winnTwelve) : " " ;
 
     //GAME 14
-    const fourteenTopScore = 11;
-    const fourteenBottomScore = 8;
+    const fourteenTopScore = 0;
+    const fourteenBottomScore = 0;
     const winnChampion = fourteenTopScore !== fourteenBottomScore ? (fourteenTopScore > fourteenBottomScore ? winnEleven : winnThirteen) : "Coaches Pitch" ;
 
 
