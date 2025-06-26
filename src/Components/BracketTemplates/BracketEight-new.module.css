@@ -12,6 +12,15 @@
     margin-top: -150px;
 }
 
+.loserBracket .colThree {
+    margin-top: -85px;
+}
+
+.loserBracket .colThree .gameInfo {
+    padding-top: 170px;
+    padding-bottom: 105px;
+}
+
 .game{
     width: 190px;
     text-align: center;
@@ -22,15 +31,6 @@
     margin-top: -150px;
     margin-bottom: 160px;
     min-width: 150px;
-}
-
-.game12 {
-    margin-top:-85px;
-}
-
-.game12 .gameInfo {
-    padding-top: 170px;
-    padding-bottom: 105px;
 }
 
 .bye{
