@@ -1,4 +1,4 @@
-import styles from './BracketEight.module.css';
+import styles from './BracketEight.module.css'
 
 function BracketEight(props){
 
