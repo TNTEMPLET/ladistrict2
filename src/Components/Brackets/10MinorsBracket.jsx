@@ -94,7 +94,7 @@ function MinorsBracket_10(){
                     gameSeven: "Game 7",
                     gameSevenInfo: "7/1/2025 @ 6:00 PM - F1",
                     gameEight: "Game 8",
-                    gameEightNext: "Loser to E",
+                    // gameEightNext: "Loser to E",
                     gameEightInfo: "7/2/2025 @ 6:00 PM - F1",
                     // gameNine: "Game 9",
                     // gameNineInfo: "7/2/2025 @ 8:00 PM - TJP",
