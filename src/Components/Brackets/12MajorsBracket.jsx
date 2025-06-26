@@ -1,6 +1,7 @@
 import BracketFive from "../BracketTemplates/BracketFive";
 import Scoreboard12U from "../Scoreboards/Scoreboard12U";
-function Majors12Bracket(){
+
+function MajorBracket_12(){
   const info = [{id: 1,
     division: "Majors",
     site: "Butch Gore Memorial Park",
@@ -147,5 +148,5 @@ function Majors12Bracket(){
     </>)
 
 }
-export default Majors12Bracket
+export default MajorBracket_12
 
