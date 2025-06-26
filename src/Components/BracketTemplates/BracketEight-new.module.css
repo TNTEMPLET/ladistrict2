@@ -16,13 +16,13 @@
     margin-top: -25px;
 }
 
-.loserBracket .colThree .gameInfo {
+.loserBracket .colThree .game .gameInfo {
     padding-top: 130px;
     padding-bottom: 160px;
 }
 
-.loserBracket .colThree .bottomTeam {
-    padding-top: 0px;
+.loserBracket .colThree .game .bottomTeam {
+    padding: 0px;
     margin-bottom: 0px;
 }
 
