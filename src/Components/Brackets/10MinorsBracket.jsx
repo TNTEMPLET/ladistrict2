@@ -20,48 +20,48 @@ function MinorsBracket_10(){
     };
 
     //GAME 1
-    const oneTopScore = 2;
-    const oneBottomScore = 6;
+    const oneTopScore = 0;
+    const oneBottomScore = 0;
     const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? teams.one : teams.two) : "";
     const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? teams.one : teams.two) : "A";
  
     //GAME 2
-    const twoTopScore = 18;
+    const twoTopScore = 0;
     const twoBottomScore = 0;
     const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? teams.three : teams.four) : "";
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? teams.three : teams.four) : "B";
 
     //GAME 3
-    const threeTopScore = 13;
-    const threeBottomScore = 9;
+    const threeTopScore = 0;
+    const threeBottomScore = 0;
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? winnOne : teams.five) : "";
     const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : teams.five) : "C";
 
     //GAME 4
-    const fourTopScore = 20;
-    const fourBottomScore = 3;
+    const fourTopScore = 0;
+    const fourBottomScore = 0;
     const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? loserOne : loserTwo) :"";
 
     //GAME 5
-    const fiveTopScore = 3;
-    const fiveBottomScore = 2;
+    const fiveTopScore = 0;
+    const fiveBottomScore = 0;
     const winnFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? winnTwo : winnThree) :"";
     const loserFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore < fiveBottomScore ? winnTwo : winnThree) :"D";
 
     //GAME 6
-    const sixTopScore = 6;
-    const sixBottomScore = 9;
+    const sixTopScore = 0;
+    const sixBottomScore = 0;
     const winnSix = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? winnFour : loserThree) : " " ;
     const loserSix = sixTopScore !== sixBottomScore ? (sixTopScore < sixBottomScore ? winnFour : loserThree) : " " ;
 
     //GAME 7
-    const sevenTopScore = 6;
-    const sevenBottomScore = 3;
+    const sevenTopScore = 0;
+    const sevenBottomScore = 0;
     const winnSeven = sevenTopScore !== sevenBottomScore ? (sevenTopScore > sevenBottomScore ? loserFive : winnSix) : " " ;
 
     //GAME 8
-    const eightTopScore = 4;
-    const eightBottomScore = 6;
+    const eightTopScore = 0;
+    const eightBottomScore = 0;
     const winnChampion = eightTopScore !== eightBottomScore ? (eightTopScore > eightBottomScore ? winnFive : winnSeven) : "10U Minors" ;
     const loserEight = eightTopScore !== eightBottomScore ? (eightTopScore < eightBottomScore ? winnFive : null) : "E" ;
 
