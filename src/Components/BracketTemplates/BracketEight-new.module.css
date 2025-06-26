@@ -12,6 +12,10 @@
     margin-top: -150px;
 }
 
+.winnerBracket .colOne .game {
+    margin-top: 0px;
+}
+
 .loserBracket .colOne .game{
     margin-top: -215px;
 }
@@ -37,8 +41,8 @@
 }
 .colOne .game{
     min-width: 120px;
-    margin-top: 315px;
 }
+
 .colOne .game .topTeam {
     display: flex;
     align-items: center;
