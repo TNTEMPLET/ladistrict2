@@ -8,6 +8,7 @@ import MinorsBracket_11 from '../Brackets/11MinorsBracket';
 import MajorBracket_12 from '../Brackets/12MajorsBracket';
 import JuniorsBracket_14 from '../Brackets/14JuniorsBracket';
 import SeniorBracket_16 from '../Brackets/16SeniorsBracket';
+import TestBracket from './TestBracket';
 
 const RenderBracket = () => {
     const [bracket, setBracket] = useState("14U");
@@ -38,7 +39,7 @@ const RenderBracket = () => {
             case '11U':
                 return <MinorsBracket_11 />;
             case '12U':
-                return <MajorBracket_12 />;
+                return <TestBracket />;
             case '14U':
                 return <JuniorsBracket_14 />;
             case '16U':
