@@ -9,7 +9,6 @@
     align-items: center;
     justify-content: left;
     margin-bottom: 200px;
-    margin-top: -150px;
 }
 
 .winnerBracket .colOne .game {
@@ -37,8 +36,8 @@
 }
 
 .game9 {
-    margin-top: -25px;
-    min-width: 120px;
+    margin-top: -150px;
+    min-width: 150px;
 }
 
 .bye{
