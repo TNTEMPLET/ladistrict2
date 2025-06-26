@@ -11,8 +11,8 @@ import SeniorBracket_16 from '../Brackets/16SeniorsBracket';
 import TestBracket from './TestBracket';
 
 const RenderBracket = () => {
-    const [bracket, setBracket] = useState("14U");
-    const [tabState, setTabState] = useState("14U");
+    const [bracket, setBracket] = useState("12U");
+    const [tabState, setTabState] = useState("12U");
 
     function handleBracketChange(event){
         const division = event.target.id;

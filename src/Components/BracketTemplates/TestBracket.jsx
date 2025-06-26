@@ -33,7 +33,7 @@ const matches = [
       { id: "team4", name: "Cubs", resultText: "2", isWinner: false },
     ],
   },
-  // Team 5 gets a bye in Round 1
+  // Winners' Round 2 (Team 5 vs. Winner of W1)
   {
     id: "W3",
     name: "Winners Round 2",
@@ -130,15 +130,17 @@ const CustomMatchComponent = ({ match, ...props }) => {
     <div className="border border-gray-300 rounded p-2 bg-white shadow-sm">
       <Match match={match} {...props} />
       <div className="text-sm text-gray-600 mt-2">
-        <p><strong>Date:</strong> {match.date}</p>
-        <p><strong>Time:</strong> {match.time}</p>
-        <p><strong>Field:</strong> {match.field}</p>
+        <p><strong>Date:</strong> {match.date || 'TBD'}</p>
+        <p><strong>Time:</strong> {match.time || 'TBD'}</p>
+        <p><strong>Field:</strong> {match.field || 'TBD'}</p>
       </div>
     </div>
   );
 };
 
 function TestBracket() {
+  // Log matches for debugging
+  console.log('Matches:', JSON.stringify(matches, null, 2));
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Baseball Double Elimination Tournament Bracket</h1>
