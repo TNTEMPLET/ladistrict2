@@ -213,7 +213,7 @@ function BracketEight(props){
                                                                 </div>
                                                         </div>
                                                         <div className={styles.colThree}>
-                                                                <div className={styles.game}>
+                                                                <div className={`${styles.game} ${styles.game12}`}>
                                                                     <div className={styles.topTeam}>
                                                                         <span className={styles.name}>{games.winnNine}</span>
                                                                         <span className={styles.score}>{games.twelveTopScore}</span>
