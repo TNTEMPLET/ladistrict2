@@ -142,7 +142,7 @@ function MajorBracket_12(){
               ]
 
     return(<>
-      <Scoreboard10U />
+      <Scoreboard12U />
       <hr />
       {bracket.length > 0 && <BracketFive bracket={bracket} info={info}/>}
     </>)
