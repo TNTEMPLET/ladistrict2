@@ -54,6 +54,7 @@
   text-align: center;
   font-size: 0.9rem;
   min-width: 120px;
+  position: relative;
 }
 
 /* Common team styles */
@@ -133,6 +134,10 @@
 .colTwo .game {
   margin-bottom: 120px;
   margin-top: 60px;
+}
+
+.colTwo .game .topTeam {
+  padding-right: 8px;
 }
 
 .colTwo .game .bottomTeam {
@@ -236,7 +241,6 @@
   padding-bottom: 65px;
 }
 
-/* Champion column */
 .colChamp {
   min-width: 10px;
   margin-bottom: 260px;
@@ -260,6 +264,66 @@
   border-top: 1px solid black;
   padding-top: 10px;
   justify-content: center;
+}
+
+/* Connector lines */
+.game::before,
+.game::after {
+  content: '';
+  position: absolute;
+  border: 1px solid black;
+}
+
+.game::before {
+  left: 100%;
+  top: 50%;
+  width: 20px;
+  height: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.game::after {
+  left: 100%;
+  top: 50%;
+  width: 20px;
+  height: 0;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.colOne .game::before {
+  top: 25%;
+}
+
+.colOne .game:nth-child(2)::before {
+  top: 75%;
+}
+
+.colTwo .game::before {
+  top: 50%;
+}
+
+.colTwo .bye::before {
+  top: 50%;
+}
+
+.colThree .game::before {
+  top: 50%;
+}
+
+.colThree .bye::before {
+  top: 50%;
+}
+
+.colFour .game::before {
+  top: 50%;
+}
+
+.colFive .bye::before {
+  top: 25%;
 }
 
 /* Responsive adjustments */
