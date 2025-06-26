@@ -27,7 +27,7 @@
 }
 
 .loserBracket .colFour {
-    margin-top: -215px;
+    margin-top: -415px;
 }
 
 .loserBracket .colFour .game .topTeam {
@@ -49,9 +49,9 @@
 .loserBracket .colFour .bye .topTeam .score {
     margin-left: auto;
 }
-.loserBracket .colFour .bye .topTeam:first-child {
+/* .loserBracket .colFour .bye .topTeam:first-child {
     margin-bottom: -1px;
-}
+} */
 .loserBracket .colFour .bye .bottomTeam {
     display: flex;
     align-items: center;
