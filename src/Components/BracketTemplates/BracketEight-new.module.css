@@ -26,6 +26,10 @@
     margin-bottom: 0px;
 }
 
+.loserBracket .colFour {
+    margin-top: -215px;
+}
+
 .loserBracket .colFour .game .topTeam {
     display: flex;
     align-items: center;
@@ -78,8 +82,8 @@
     height: 100%;
     border-right: 1px solid black;
     position: relative;
-    padding-top: 225px;
-    padding-bottom: 255px;
+    padding-top: 125px;
+    padding-bottom: 105px;
     padding-left: 8px;
 }
 .loserBracket .colFour .bye .gameInfo span:last-child {
