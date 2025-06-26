@@ -7,21 +7,23 @@
   border: 1px solid hsla(0, 0%, 0%, 0.1);
   border-radius: 5px;
   box-shadow: 5px 5px hsla(0, 0%, 59%, 0.6);
-  padding: 20px;
+  padding-left: 90px;
 }
 
 /* Bracket title */
 .bracketTitle {
-  width: 100%;
-  max-width: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid hsla(0, 0%, 0%, 0.3);
   border-radius: 5px;
   align-self: flex-end;
-  margin: 20px 0;
+  margin: 20px 20px 0 0;
   padding: 15px;
 }
 
 .bracketTitle .name {
+  display: inline;
   font-weight: lighter;
   font-size: 0.75rem;
   text-decoration: underline;
@@ -48,11 +50,10 @@
 /* Base styles for game and bye */
 .game,
 .bye {
-  width: 100%;
-  min-width: 120px;
-  max-width: 190px;
+  width: 190px;
   text-align: center;
   font-size: 0.9rem;
+  min-width: 120px;
 }
 
 /* Common team styles */
@@ -62,12 +63,7 @@
   align-items: center;
   width: 100%;
   border-bottom: 1px solid black;
-  padding: 8px;
-}
-
-.bottomTeam {
-  border-right: 1px solid black;
-  margin-bottom: 20px;
+  position: relative;
 }
 
 .topTeam span,
@@ -85,70 +81,135 @@
   margin-left: auto;
 }
 
+.topTeam:first-child,
+.bottomTeam:first-child {
+  margin-bottom: -1px;
+}
+
+.bottomTeam {
+  border-right: 1px solid black;
+  margin-bottom: 20px;
+}
+
 /* Common gameInfo styles */
 .gameInfo {
   display: grid;
-  gap: 5px;
   align-items: center;
   justify-content: center;
   width: 100%;
   border-right: 1px solid black;
-  padding: 10px 8px;
+  position: relative;
 }
 
-.gameInfo span:last-child {
+/* Winner bracket */
+.winnerBracket {
+  display: flex;
+  justify-content: left;
+}
+
+/* Loser bracket */
+.loserBracket {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 200px;
+  margin-top: -150px;
+}
+
+/* Column-specific styles */
+.colOne .game {
+  margin-top: 315px;
+}
+
+.loserBracket .colOne .game {
+  margin-top: -215px;
+}
+
+.colTwo {
+  margin-bottom: 40px;
+  margin-left: 8px;
+}
+
+.colTwo .game {
+  margin-bottom: 120px;
+  margin-top: 60px;
+}
+
+.colTwo .game .bottomTeam {
+  padding-top: 15px;
   padding-right: 8px;
 }
 
-.gameInfo .time {
-  margin-left: auto;
-}
-
-/* Winner and loser bracket containers */
-.winnerBracket,
-.loserBracket {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
-}
-
-/* Winner bracket column-specific styles */
-.colOne .game {
-  margin-top: 100px;
-}
-
-.colTwo .game,
-.colThree .game {
-  margin-top: 50px;
-  margin-bottom: 60px;
+.colTwo .game .gameInfo {
+  padding-top: 55px;
+  padding-bottom: 35px;
+  padding-right: 8px;
 }
 
 .colTwo .bye {
-  margin-top: 20px;
+  margin-top: -25px;
 }
 
 .colThree {
-  margin-top: 50px;
+  margin-top: 70px;
+  margin-left: 8px;
+}
+
+.colThree .game {
+  margin-bottom: 120px;
+  margin-top: 60px;
+}
+
+.colThree .game .bottomTeam {
+  padding-top: 15px;
+  padding-left: 8px;
+}
+
+.colThree .game .gameInfo {
+  padding-top: 125px;
+  padding-bottom: 105px;
+  padding-left: 8px;
+}
+
+.loserBracket .colThree .bye {
+  margin-top: -240px;
 }
 
 .colFour {
   margin-top: 75px;
+  margin-left: 8px;
 }
 
 .colFour .game .topTeam {
-  margin-top: 100px;
+  margin-top: 200px;
+  padding-right: 8px;
 }
 
 .colFour .game .gameInfo {
-  padding: 100px 8px;
+  padding-top: 225px;
+  padding-bottom: 255px;
+  padding-left: 8px;
+}
+
+.colFour .game .gameInfo .time {
+  padding-bottom: 50px;
 }
 
 .colFive {
-  margin-top: 200px;
+  min-width: 120px;
+  margin-top: 525px;
+  margin-left: 8px;
+}
+
+.colFive .line {
+  margin-top: -18px;
+  margin-bottom: 120px;
+  border-top: 1px solid black;
+  max-width: 120px;
 }
 
 .colFive .bye .topTeam {
-  min-height: 100px;
+  min-height: 175%;
   border-bottom: 1px dashed black;
 }
 
@@ -160,33 +221,30 @@
 }
 
 .colFive .bye .gameInfo {
-  padding: 100px 30px;
+  padding: 200px 30px;
   border-right: 1px dashed black;
   border-top: 1px solid black;
   font-size: 0.85rem;
 }
 
-/* Loser bracket specific styles */
-.loserBracket {
-  margin-top: 50px;
+.colFive .bye .gameInfo .time {
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
 
-.loserBracket .colOne .game {
-  margin-top: 0;
-}
-
-.loserBracket .colTwo .bye,
-.loserBracket .colThree .bye {
-  margin-top: 0;
+.colFive .bye .gameInfo .more {
+  padding-bottom: 65px;
 }
 
 /* Champion column */
 .colChamp {
-  min-width: 120px;
+  min-width: 10px;
+  margin-bottom: 260px;
+  margin-left: 8px;
 }
 
 .colChamp .line {
-  margin-top: 300px;
+  margin-top: 725px;
   min-width: 160px;
 }
 
@@ -204,44 +262,11 @@
   justify-content: center;
 }
 
-/* Connector lines (basic implementation) */
-.game::after,
-.bye::after {
-  content: '';
-  position: absolute;
-  right: -20px;
-  top: 50%;
-  width: 20px;
-  height: 1px;
-  border-top: 1px solid black;
-}
-
-.colTwo .game::after,
-.colThree .game::after,
-.colFour .game::after {
-  height: 50%;
-  border-right: 1px solid black;
-  top: 25%;
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .winnerBracket,
   .loserBracket {
-    grid-template-columns: 1fr;
-  }
-
-  .game,
-  .bye {
-    max-width: 100%;
-  }
-
-  .bracketInfo {
-    padding: 10px;
-  }
-
-  .bracketTitle {
-    max-width: 100%;
+    flex-direction: column;
   }
 
   .colOne,
@@ -250,7 +275,23 @@
   .colFour,
   .colFive,
   .colChamp {
+    margin-left: 0;
     margin-top: 20px;
+  }
+
+  .game,
+  .bye {
+    width: 100%;
+    max-width: 190px;
+  }
+
+  .bracketInfo {
+    padding: 10px;
+  }
+
+  .bracketTitle {
+    width: 100%;
+    margin: 10px;
   }
 
   .colFour .game .gameInfo,
