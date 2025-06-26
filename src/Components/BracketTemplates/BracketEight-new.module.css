@@ -24,7 +24,8 @@
     margin-top: -25px;
     min-width: 120px;
 }
-.loserBracket .colThree .bye{
+.loserBracket .colThree .bye,
+.loserBracket .colThree .game {
     margin-top: -240px;
     min-width: 120px;
 }
