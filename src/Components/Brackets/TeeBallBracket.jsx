@@ -49,7 +49,7 @@ function Teeball(){
     //GAME 6
     const sixTopScore = 0;
     const sixBottomScore =  0;
-    const winnChampion = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? winnThree : winnFive) : "Tee Ball");
+    const winnChampion = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? winnThree : winnFive) : "Tee Ball"  ;
 
     const bracket =  [{  id: 1,
         gameOne: "Game 1",
@@ -59,7 +59,7 @@ function Teeball(){
         gameTwoNext: "Loser to B",
         gameTwoInfo: "6/30/2024 @ 9:00 AM - F3",
         gameThree: "Game 3",
-        gameThreeNext: "Loser to C"
+        gameThreeNext: "Loser to C",
         gameThreeInfo: "6/30/2024 @ 12:00 PM - F3",
         gameFour: "Game 4",
         gameFourInfo: "7/1/2024 @ 6:00 PM - F3",
@@ -81,7 +81,7 @@ function Teeball(){
         fiveTopScore: fiveTopScore,
         fiveBottomScore: fiveBottomScore,
         sixTopScore: sixTopScore,
-        sixBottomScore: sixBottomScore
+        sixBottomScore: sixBottomScore,
         winnOne: winnOne,
         winnTwo: winnTwo,
         winnThree: winnThree,
