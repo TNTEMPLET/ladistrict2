@@ -66,7 +66,7 @@ function MajorBracket_12(){
     const winnEight = eightTopScore !== eightBottomScore ? (eightTopScore > eightBottomScore ? winnFive : winnSeven) : " " ;
     const loserEight = eightTopScore !== eightBottomScore ? (eightTopScore < eightBottomScore ? winnFive : null) : "E" ;
 
-    GAME 9
+    // GAME 9
     const nineTopScore = loserEight !== null ? 0: " ";
     const nineBottomScore =  loserEight !== null ? 0: " ";
     const winnChampion =  winnFive !== winnEight
