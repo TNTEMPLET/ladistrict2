@@ -38,7 +38,7 @@ const RenderBracket = () => {
             case '11U':
                 return <MinorsBracket_11 />;
             case '12U':
-                return <MajorBracket_12r />;
+                return <MajorBracket_12 />;
             case '14U':
                 return <JuniorsBracket_14 />;
             case '16U':
