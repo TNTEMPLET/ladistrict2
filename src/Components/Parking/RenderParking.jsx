@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './RenderParking.module.css'
-import dths from './dths2.png';
-import sahs from './sahs2.png';
+import butchgore from './BUTCH GORE PARK GRAPHIC.png';
 import rule1 from './IMG_6338.jpeg';
 import rule2 from './IMG_6339.jpeg';
 
@@ -10,14 +9,10 @@ const RenderParking = () => {
     <>
       <div className={styles.container}>
         <div className={styles.parking}>
-          <h3>Dutchtown High School</h3>
-          <p>13165 LA Hwy 73</p>
-          <p>Geismar, La 70734</p>
-          <img src={dths} alt="" />
-          <h3>St. Amant High School</h3>
-          <p>12035 LA Hwy 431</p>
+          <h3>Butch Gore Memorial Park</h3>
+          <p>14550 Harry Savoy RdSt Amant, LA 70774</p>
           <p>St. Amant, La 70774</p>
-          <img src={sahs} alt="" />
+          <img src={butchgore} alt="Butch Gore Park" />
         </div>
         <div className={styles.rules}>
           <ul>
@@ -28,9 +23,9 @@ const RenderParking = () => {
             <li>Park at your own risk.</li>
             <h3>YOUR VEHICLE WILL BE TOWED IF YOU VIOLATE PARKING RULES</h3><br /><br /><br />
             <h2>Admissions and Concessions</h2>
-            <li>Admission: $10.00 (6 & Under Enter for Free)</li>
+            <li>Admission: $5.00 (6 & Under Enter for Free)</li>
             <li>Payment Methods: Cash, Card (Concessions Only), or Venmo </li>
-            <li>NO Ice Chests are allowed</li>
+            <li>ONLY PLAYER Ice Chest is allowed</li>
           </ul><br /><hr /><br />
           <img src={rule1} alt="" />
           <img src={rule2} alt="" />
