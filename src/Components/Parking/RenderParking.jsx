@@ -26,9 +26,7 @@ const RenderParking = () => {
             <li>Admission: $5.00 (6 & Under Enter for Free)</li>
             <li>Payment Methods: Cash, Card (Concessions Only), or Venmo </li>
             <li>ONLY PLAYER Ice Chest is allowed</li>
-          </ul><br /><hr /><br />
-          <img src={rule1} alt="" />
-          <img src={rule2} alt="" />
+          </ul>
         </div>
       </div>
   </>
