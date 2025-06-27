@@ -3,6 +3,10 @@
     justify-content: left;
 }
 
+.winnerBracket .colFour {
+    width: 160px;
+}
+
 .loserBracket{
     height: auto;
     display: flex;
