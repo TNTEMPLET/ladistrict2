@@ -30,7 +30,7 @@ function BracketFive(props){
                                                                 </div> 
                                                                 <div className={styles.gameInfo}>
                                                                     <span className={styles.name}>{games.gameTwo}</span>
-                                                                    <span className={styles.name}>{games.gameTwtwoxt}</span>
+                                                                    <span className={styles.name}>{games.gameTwoNext}</span>
                                                                     <span className={styles.time}>{games.gameTwoInfo}</span>
                                                                 </div> 
                                                                 <div className={styles.bottomTeam}>
