@@ -207,7 +207,7 @@ function BracketEight(props){
                                                                         <span className={styles.time}>{games.gameTenInfo}</span>
                                                                     </div> 
                                                                     <div className={styles.bottomTeam}>
-                                                                        <span className={styles.name}>{games.loser6}</span>
+                                                                        <span className={styles.name}>{games.loserSix}</span>
                                                                         <span className={styles.score}>{games.tenBottomScore}</span>
                                                                     </div>           
                                                                 </div>
