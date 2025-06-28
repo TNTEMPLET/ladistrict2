@@ -70,6 +70,7 @@ function Teeball(){
         teamOne: teams.one,
         teamTwo: teams.two, 
         teamThree: teams.three,
+        teamFour: teams.four,
         oneTopScore: oneTopScore,
         oneBottomScore: oneBottomScore,
         twoTopScore: twoTopScore,
