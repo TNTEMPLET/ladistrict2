@@ -21,8 +21,8 @@ function MinorsBracket_11(){
     };
 
     //GAME 1
-    const oneTopScore = 0;
-    const oneBottomScore = 0;
+    const oneTopScore = 2;
+    const oneBottomScore = 12; 
     const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? teams.one : teams.two) : "";
     const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? teams.one : teams.two) : "A";
  
