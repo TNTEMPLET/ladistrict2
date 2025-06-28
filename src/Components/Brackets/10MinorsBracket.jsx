@@ -20,8 +20,8 @@ function MinorsBracket_10(){
     };
 
     //GAME 1
-    const oneTopScore = 0;
-    const oneBottomScore = 0;
+    const oneTopScore = 3;
+    const oneBottomScore = 4;
     const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? teams.one : teams.two) : "";
     const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? teams.one : teams.two) : "B";
  
