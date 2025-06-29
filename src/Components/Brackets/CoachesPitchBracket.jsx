@@ -37,8 +37,8 @@ function CoachesPitch(){
     //GAME 3
     const threeTopScore = 8;
     const threeBottomScore = 7;
-    const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? teams.five : teams.six) : "";
-    const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? teams.five : teams.six) : "C";
+    const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? teams.five : teams.six) : "";
+    const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? teams.five : teams.six) : "C";
 
     //GAME 4
     const fourTopScore = 0;
