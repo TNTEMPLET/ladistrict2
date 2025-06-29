@@ -40,7 +40,7 @@ function MajorBracket_12(){
 
     //GAME 4
     const fourTopScore = 0;
-    const fourBottomScore = 0;
+    const fourBottomScore = 15;
     const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? loserOne : loserTwo) :"";
 
     //GAME 5
