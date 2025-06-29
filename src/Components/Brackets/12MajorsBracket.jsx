@@ -33,7 +33,7 @@ function MajorBracket_12(){
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? teams.three : teams.four) : "A";
 
     //GAME 3
-    const threeTopScore = 0;
+    const threeTopScore = 10;
     const threeBottomScore = 0;
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? winnOne : teams.five) : "";
     const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : teams.five) : "C";
