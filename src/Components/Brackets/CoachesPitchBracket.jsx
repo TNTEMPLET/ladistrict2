@@ -23,26 +23,26 @@ function CoachesPitch(){
     };
 
     //GAME 1
-    const oneTopScore = 0;
+    const oneTopScore = 16; 
     const oneBottomScore = 0;
     const winnOne = oneTopScore !== oneBottomScore ? (oneTopScore > oneBottomScore ? teams.one : teams.two) : "";
     const loserOne =  oneTopScore !== oneBottomScore ? (oneTopScore < oneBottomScore ? teams.one : teams.two) : "A";
 
     //GAME 2
-    const twoTopScore = 0;
-    const twoBottomScore = 0;
+    const twoTopScore = 2;
+    const twoBottomScore = 12;
     const winnTwo = twoTopScore !== twoBottomScore ? (twoTopScore > twoBottomScore ? teams.three : teams.four) : "";
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? teams.three : teams.four) : "B";
 
     //GAME 3
-    const threeTopScore = 0;
-    const threeBottomScore = 0;
+    const threeTopScore = 8;
+    const threeBottomScore = 7;
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? teams.five : teams.six) : "";
     const loserThree =  threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? teams.five : teams.six) : "C";
 
     //GAME 4
     const fourTopScore = 0;
-    const fourBottomScore = 0;
+    const fourBottomScore = 20;
     const winnFour =  fourTopScore!== fourBottomScore ? (fourTopScore > fourBottomScore ? teams.seven : teams.eight) :" ";
     const loserFour =  fourTopScore!== fourBottomScore ? (fourTopScore < fourBottomScore ? teams.seven : teams.eight) :"D";
 
