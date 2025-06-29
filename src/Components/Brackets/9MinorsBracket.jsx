@@ -31,12 +31,12 @@ function MinorsBracket_9(){
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? winnOne : teams.three) : "B";
     
     //GAME 3
-    const threeTopScore = 6;
-    const threeBottomScore = 7;
+    const threeTopScore = 8;
+    const threeBottomScore = 4;
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? loserOne : loserTwo) : "";
 
     //GAME 4
-    const fourTopScore = 0;
+    const fourTopScore = 15;
     const fourBottomScore = 0;
     const winnChampion = fourTopScore !== fourBottomScore ? (fourTopScore > fourBottomScore ? winnTwo : winnThree) : "9U Minors" ;
     const loserFour = fourTopScore !== fourBottomScore ? (fourTopScore < fourBottomScore ? winnTwo : null) : "C" ;
