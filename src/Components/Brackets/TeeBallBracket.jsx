@@ -31,14 +31,14 @@ function Teeball(){
     const loserTwo = twoTopScore !== twoBottomScore ? (twoTopScore < twoBottomScore ? teams.three : teams.four) : "B";
     
     //GAME 3
-    const threeTopScore = 0;
-    const threeBottomScore = 0;
+    const threeTopScore = 9;
+    const threeBottomScore = 20;
     const winnThree = threeTopScore !== threeBottomScore ? (threeTopScore > threeBottomScore ? winnOne : winnTwo) : "";
     const loserThree = threeTopScore !== threeBottomScore ? (threeTopScore < threeBottomScore ? winnOne : winnTwo) : "C" ;
 
     //GAME 4
-    const fourTopScore = 0;
-    const fourBottomScore = 0;
+    const fourTopScore = 4;
+    const fourBottomScore = 20;
     const winnFour = fourTopScore !== fourBottomScore ? (fourTopScore > fourBottomScore ? loserOne : loserTwo) : " " ;
     
      //GAME 5
