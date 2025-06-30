@@ -47,25 +47,25 @@ function CoachesPitch(){
     const loserFour =  fourTopScore!== fourBottomScore ? (fourTopScore < fourBottomScore ? teams.seven : teams.eight) :"D";
 
     //GAME 5
-    const fiveTopScore = 0;
-    const fiveBottomScore = 0;
+    const fiveTopScore = 6;
+    const fiveBottomScore = 3;
     const winnFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? winnOne : winnTwo) :" ";
     const loserFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore < fiveBottomScore ? winnOne : winnTwo) :"F";
 
     //GAME 6
     const sixTopScore = 0;
-    const sixBottomScore = 0;
+    const sixBottomScore = 5;
     const winnSix = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? winnThree : winnFour) : " " ;
     const loserSix =  sixTopScore!== sixBottomScore ? (sixTopScore < sixBottomScore ? winnThree : winnFour) : "E";
 
     //GAME 7
-    const sevenTopScore = 0;
-    const sevenBottomScore = 0;
+    const sevenTopScore = 3;
+    const sevenBottomScore = 10;
     const winnSeven = sevenTopScore !== sevenBottomScore ? (sevenTopScore > sevenBottomScore ? loserOne : loserTwo) : " ";
 
     //GAME 8
-    const eightTopScore = 0;
-    const eightBottomScore = 0;
+    const eightTopScore = 10;
+    const eightBottomScore = 2;
     const winnEight = eightTopScore !== eightBottomScore ? (eightTopScore > eightBottomScore ? loserThree : loserFour) : " ";
 
     //GAME 9
