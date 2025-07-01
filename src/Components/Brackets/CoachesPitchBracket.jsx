@@ -87,7 +87,7 @@ function CoachesPitch(){
     //GAME 12
     const twelveTopScore = 0;
     const twelveBottomScore = 0;
-    const winnTwelve = twelveTopScore !== tenBottomScore ? (twelveTopScore > tenBottomScore ? winnNine : winnTen) : " " ;
+    const winnTwelve = twelveTopScore !== twelveBottomScore ? (twelveTopScore > twelveBottomScore ? winnNine : winnTen) : " " ;
 
     //GAME 13
     const thirteenTopScore = 0;
