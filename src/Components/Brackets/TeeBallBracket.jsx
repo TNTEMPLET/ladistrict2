@@ -47,8 +47,8 @@ function Teeball(){
     const winnFive = fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? loserThree : winnFour) : " " ;
 
     //GAME 6
-    const sixTopScore = 0;
-    const sixBottomScore =  0;
+    const sixTopScore = 8;
+    const sixBottomScore =  15;
     const winnChampion = sixTopScore !== sixBottomScore ? (sixTopScore > sixBottomScore ? winnThree : winnFive) : "Tee Ball"  ;
 
     const bracket =  [{  id: 1,
