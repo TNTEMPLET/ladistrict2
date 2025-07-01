@@ -69,13 +69,13 @@ function CoachesPitch(){
     const winnEight = eightTopScore !== eightBottomScore ? (eightTopScore > eightBottomScore ? loserThree : loserFour) : " ";
 
     //GAME 9
-    const nineTopScore = 0;
-    const nineBottomScore = 0;
+    const nineTopScore = 10;
+    const nineBottomScore = 1;
     const winnNine = nineTopScore !== nineBottomScore ? (nineTopScore > nineBottomScore ? loserSix : winnSeven) : " " ;
 
     //GAME 10
-    const tenTopScore = 0;
-    const tenBottomScore = 0;
+    const tenTopScore = 5;
+    const tenBottomScore = 7;
     const winnTen = tenTopScore !== tenBottomScore ? (tenTopScore > tenBottomScore ? winnEight : loserFive) : " " ;
     
     //GAME 11
