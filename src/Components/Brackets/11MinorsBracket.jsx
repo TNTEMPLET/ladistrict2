@@ -45,7 +45,7 @@ function MinorsBracket_11(){
 
     //GAME 5
     const fiveTopScore = 0;
-    const fiveBottomScore = 0;
+    const fiveBottomScore = 1;
     const winnFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore > fiveBottomScore ? winnTwo : winnThree) :"";
     const loserFive =  fiveTopScore !== fiveBottomScore ? (fiveTopScore < fiveBottomScore ? winnTwo : winnThree) :"D";
 
