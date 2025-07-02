@@ -90,8 +90,8 @@ function CoachesPitch(){
     const winnTwelve = twelveTopScore !== twelveBottomScore ? (twelveTopScore > twelveBottomScore ? winnNine : winnTen) : " " ;
 
     //GAME 13
-    const thirteenTopScore = 0;
-    const thirteenBottomScore = 0;
+    const thirteenTopScore = 5;
+    const thirteenBottomScore = 4;
     const winnThirteen = thirteenTopScore !== thirteenBottomScore ? (thirteenTopScore > thirteenBottomScore ? loserEleven : winnTwelve) : " " ;
 
     //GAME 14
