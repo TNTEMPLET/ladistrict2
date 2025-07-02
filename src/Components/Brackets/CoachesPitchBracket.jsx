@@ -85,8 +85,8 @@ function CoachesPitch(){
     const loserEleven =  elevenTopScore!== elevenBottomScore ? (elevenTopScore < elevenBottomScore ? winnFive : winnSix) :"G";
 
     //GAME 12
-    const twelveTopScore = 0;
-    const twelveBottomScore = 0;
+    const twelveTopScore = 8;
+    const twelveBottomScore = 2;
     const winnTwelve = twelveTopScore !== twelveBottomScore ? (twelveTopScore > twelveBottomScore ? winnNine : winnTen) : " " ;
 
     //GAME 13
