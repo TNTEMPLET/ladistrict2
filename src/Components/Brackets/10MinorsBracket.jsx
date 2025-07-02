@@ -60,8 +60,8 @@ function MinorsBracket_10(){
     const winnSeven = sevenTopScore !== sevenBottomScore ? (sevenTopScore > sevenBottomScore ? loserFive : winnSix) : " " ;
 
     //GAME 8
-    const eightTopScore = 0;
-    const eightBottomScore = 0;
+    const eightTopScore = 2;
+    const eightBottomScore = 4;
     const winnChampion = eightTopScore !== eightBottomScore ? (eightTopScore > eightBottomScore ? winnFive : winnSeven) : "10U Minors" ;
     const loserEight = eightTopScore !== eightBottomScore ? (eightTopScore < eightBottomScore ? winnFive : null) : "E" ;
 
