@@ -95,7 +95,7 @@ function CoachesPitch(){
     const winnThirteen = thirteenTopScore !== thirteenBottomScore ? (thirteenTopScore > thirteenBottomScore ? loserEleven : winnTwelve) : " " ;
 
     //GAME 14
-    const fourteenTopScore = 0;
+    const fourteenTopScore = 7;
     const fourteenBottomScore = 0;
     const winnChampion = fourteenTopScore !== fourteenBottomScore ? (fourteenTopScore > fourteenBottomScore ? winnEleven : winnThirteen) : "Coaches Pitch" ;
 
