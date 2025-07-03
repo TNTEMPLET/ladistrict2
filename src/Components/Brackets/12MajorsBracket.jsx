@@ -68,7 +68,7 @@ function MajorBracket_12(){
 
     // GAME 9
     const nineTopScore = loserEight !== null ? 0: " ";
-    const nineBottomScore =  loserEight !== null ? 0: " ";
+    const nineBottomScore =  loserEight !== null ? 1: " ";
     const winnChampion =  winnFive !== winnEight
                 ? ( nineTopScore !== nineBottomScore ? (nineTopScore > nineBottomScore ? winnEight : loserEight) : "12U Majors") 
                 : winnFive;
